@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browserName" value="chrome"></parameter>
+	<listeners>
+		<listener class-name="qalegend.utils.Listener" />
+		<listener class-name="reports.ExtentReport" />
+		<listener class-name="retryAnalyser.Retry"/>
+		<listener class-name="qalegend.utils.RetryListener"/>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="qalegend.LoginTestCase">
+				<methods>
+					<include name="verifyLoginWithValidUsernameAndValidPassword" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demo">
+	<parameter name="browserName" value="chrome"/>
+	<listeners>
+		<listener class-name="qalegend.utils.Listener" />
+		<listener class-name="reports.ExtentReport" />
+		
+	</listeners>
+	<test name="Test1">
+		<classes>
+			<class name="qalegend.UserManagementModule"/>
+				
+		
+		</classes>
+	</test>
+	
+</suite>

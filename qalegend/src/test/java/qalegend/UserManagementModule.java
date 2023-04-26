@@ -1,34 +1,22 @@
 package qalegend;
 
-import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
-
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import common.functions.BrowserLaunch;
+import constants.Constant;
 import pages.DashboardPage;
-import pages.LoginPage;
 import pages.UserPage;
-import qalegend.utils.DataFile;
-import qalegend.utils.Wait;
+import qalegend.utils.QaDataProvider;
+import qalegend.utils.WaitFunction;
 
 public class UserManagementModule extends BrowserLaunch {
-	Wait waitForLoad = new Wait();
+	WaitFunction waitForLoad = new WaitFunction();
 	SoftAssert check = new SoftAssert();
-	
 
-	@Test(testName = "TestCase3", priority = 1, dataProvider = "Userdata", groups = "sanityTest")
+	@Test(testName = "TestCase3", priority = 1, dataProvider = "Userdata", dataProviderClass = QaDataProvider.class, groups = "sanityTest")
 	public void verifyUserCreationWithValidData(String login_userid, String login_password, String first_name,
 			String email, String roleName, String uname, String passwordData, String confirmPassword)
 			throws InterruptedException {
@@ -37,17 +25,13 @@ public class UserManagementModule extends BrowserLaunch {
 		UserPage user = new UserPage(driver);
 		login.verifyLoginWithValidUsernameAndValidPassword(login_userid, login_password);
 		dashboard.navigateToUserPage();
-		
 		user.CreateUser(first_name, email, roleName, uname, passwordData, confirmPassword);
-		WebElement successMessage = driver.findElement(By.xpath("//*[contains(text(),'User added successfully')]"));
-		waitForLoad.explicitWaitUntilVisibilityOfElement(driver, successMessage, 50);
-		Boolean present = driver.findElement(By.xpath("//*[contains(text(),'User added successfully')]")).isDisplayed();
-		check.assertTrue(present);
+		check.assertTrue(user.successMessage());
 		check.assertAll();
 
 	}
 
-	@Test(testName = "TestCase4", priority = 2, dataProvider = "ExistingUserdata", groups = "smokeTest")
+	@Test(testName = "TestCase4", priority = 2, dataProvider = "ExistingUserdata", dataProviderClass = QaDataProvider.class)
 	public void verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage(String login_userid,
 			String login_password, String first_name, String email, String roleName, String uname, String passwordData,
 			String confirmPassword) throws InterruptedException {
@@ -58,87 +42,100 @@ public class UserManagementModule extends BrowserLaunch {
 		dashboardObject.navigateToUserPage();
 		UserPage user = new UserPage(driver);
 		user.CreateUser(first_name, email, roleName, uname, passwordData, confirmPassword);
-		waitForLoad.implicitWaitforElement(driver, 40);
-		List<WebElement> validationMessage = driver.findElements(By.xpath("//label[@class='error']"));
-		Boolean checkpoint = false;
-		for (WebElement message : validationMessage) {
-			if (message.getText().equalsIgnoreCase("Invalid username or User already exist")) {
-				checkpoint = true;
-			}
-		}
-		check.assertTrue(checkpoint);
+		check.assertTrue(user.getErrorMessage());
 		check.assertAll();
 
 	}
 
-	@Test(testName = "TestCase5", dataProvider = "searchUser")
-	public void searchUser(String login_user, String login_password, String searchValue) {
+	@Test(testName = "TestCase5", dataProvider = "searchUser", groups = "regression", dataProviderClass = QaDataProvider.class)
+	public void verifySearchUserFunctionality(String login_user, String login_password, String searchValue) {
 		LoginTestCase login = new LoginTestCase();
 		DashboardPage dashboard = new DashboardPage(driver);
 		UserPage user = new UserPage(driver);
 		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
 		dashboard.navigateToUserPage();
 		user.searchUser(searchValue);
-		Boolean ifPresent = false;
-		List<WebElement> userList = driver.findElements(By.xpath("//table[@id='users_table']/tbody/tr"));
-		int rowCount = userList.size();
-		int colCount = driver.findElements(By.xpath("//table[@id='users_table']/tbody/tr/td")).size();
-		for (int row = 1; row <= rowCount; row++) {
-			for (int col = 1; col <= colCount; col++) {
-				WebElement tableData = driver
-						.findElement(By.xpath("//table[@id='users_table']/tbody/tr[" + row + "]/td[" + col + "]"));
-				if (tableData.getText().equalsIgnoreCase(searchValue)) {
-					ifPresent = true;
-				}
-			}
-		}
-		check.assertTrue(ifPresent);
+		check.assertTrue(user.getListOfUser(searchValue));
+		check.assertAll();
+		
+	}
+
+	@Test(testName = "TestCase6", dataProvider = "viewUser", groups = "regression", dataProviderClass = QaDataProvider.class)
+	public void verifyViewUserFunctionality(String login_user, String login_password, String searchValue) {
+		LoginTestCase login = new LoginTestCase();
+		DashboardPage dashboard = new DashboardPage(driver);
+		UserPage user = new UserPage(driver);
+		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
+		dashboard.navigateToUserPage();
+		user.searchUser(searchValue);
+		user.viewUser();
+		Boolean viewPage = user.getViewUser().isDisplayed();
+		check.assertTrue(viewPage);
 		check.assertAll();
 	}
-@Test(testName="TestCase6",dataProvider="viewUser")
-public void verifyViewUserFunctionality(String login_user,String login_password,String searchValue) {
-	LoginTestCase login = new LoginTestCase();
-	DashboardPage dashboard = new DashboardPage(driver);
-	UserPage user = new UserPage(driver);
-	login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
-	dashboard.navigateToUserPage();
-	user.searchUser(searchValue);
-	user.viewUser();
-Boolean viewPage=driver.findElement(By.xpath("//h1[contains(text(),'View User')]")).isDisplayed();
-check.assertTrue(viewPage);
-check.assertAll();
-}
-	@DataProvider(name = "Userdata")
-	public Object[][] dataReadFunction() throws EncryptedDocumentException, InvalidFormatException, IOException {
-		Object[][] obj = DataFile.getDataFromExcel(
-				"C:\\Users\\arath\\eclipse-workspace\\qalegend\\src\\main\\resources\\Data\\Logindata.xlsx",
-				"usercreation");
-		return obj;
+
+	@Test(testName = "TestCase7", dataProvider = "cancelDeleteUser", groups = "regression", dataProviderClass = QaDataProvider.class)
+	public void verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(String login_user, String login_password,
+			String searchValue) throws Exception {
+		LoginTestCase login = new LoginTestCase();
+		DashboardPage dashboard = new DashboardPage(driver);
+		UserPage user = new UserPage(driver);
+		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
+		dashboard.navigateToUserPage();
+		user.searchUser(searchValue);
+		user.deleteUser();
+		user.cancelDeleteRequest();
+		check.assertTrue(user.getListOfUser(searchValue));
+		check.assertAll();
+
 	}
 
-	@DataProvider(name = "ExistingUserdata")
-	public Object[][] dataReadFunctionexisting()
-			throws EncryptedDocumentException, InvalidFormatException, IOException {
-		Object[][] obj = DataFile.getDataFromExcel(
-				"C:\\Users\\arath\\eclipse-workspace\\qalegend\\src\\main\\resources\\Data\\Logindata.xlsx",
-				"existingusername");
-		return obj;
+	@Test(testName = "TestCase8", dataProvider = "acceptDeleteRequest", dataProviderClass = QaDataProvider.class)
+	public void verifyUserDeletedOnAcceptingConfirmationMessage(String login_user, String login_password,
+			String searchValue) throws Exception {
+		LoginTestCase login = new LoginTestCase();
+		DashboardPage dashboard = new DashboardPage(driver);
+		UserPage user = new UserPage(driver);
+		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
+		dashboard.navigateToUserPage();
+		user.searchUser(searchValue);
+		user.deleteUser();
+		user.acceptDeleteRequest();
+		check.assertTrue(user.getDeleteMessage());
+		check.assertAll();
+
 	}
 
-	@DataProvider(name = "searchUser")
-	public Object[][] searchUserData() throws EncryptedDocumentException, InvalidFormatException, IOException {
-		Object[][] obj = DataFile.getDataFromExcel(
-				"C:\\Users\\arath\\eclipse-workspace\\qalegend\\src\\main\\resources\\Data\\Logindata.xlsx",
-				"searchuser");
-		return obj;
+	@Test(testName = "TestCase9", dataProvider = "editUserCase", dataProviderClass = QaDataProvider.class)
+	public void verifyEditUserFunction(String login_user, String login_password, String searchValue,
+			String salesComissionPercentage) throws Exception {
+		LoginTestCase login = new LoginTestCase();
+		DashboardPage dashboard = new DashboardPage(driver);
+		UserPage user = new UserPage(driver);
+		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
+		dashboard.navigateToUserPage();
+		user.searchUser(searchValue);
+		user.editUser(salesComissionPercentage);
+		check.assertTrue(user.getUpdateMessage());
+		check.assertAll();
+
 	}
 
-	@DataProvider(name = "viewUser")
-	public Object[][] viewUser() throws EncryptedDocumentException, InvalidFormatException, IOException {
-		Object[][] obj = DataFile.getDataFromExcel(
-				"C:\\Users\\arath\\eclipse-workspace\\qalegend\\src\\main\\resources\\Data\\Logindata.xlsx",
-				"viewUser");
-		return obj;
-	}
+	@Test(testName = "TestCase10", dataProvider = "inactiveUser", dataProviderClass = QaDataProvider.class)
+	public void verifyInactiveUserCase(String login_user, String login_password, String searchValue, String new_id,
+			String new_pwd) throws Exception {
+		LoginTestCase login = new LoginTestCase();
+		DashboardPage dashboard = new DashboardPage(driver);
+		UserPage user = new UserPage(driver);
+		login.verifyLoginWithValidUsernameAndValidPassword(login_user, login_password);
+		dashboard.navigateToUserPage();
+		user.searchUser(searchValue);
+		user.inactiveUser();
+		dashboard.navigateToHome();
+		dashboard.logoutFunction();
+		login.verifyLoginWithValidUsernameAndInvalidPassword(new_id, new_pwd);
+		check.assertEquals(user.getInactiveMessage(), Constant.INACTIVE_USER);
+		check.assertAll();
 
+	}
 }

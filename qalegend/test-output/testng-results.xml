@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-24T08:38:34 IST" name="demo" finished-at="2023-04-24T08:38:43 IST" duration-ms="9004">
+    <groups>
+      <group name="sanityTest">
+        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1b7cc17c]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
+      </group> <!-- sanityTest -->
+      <group name="smokeTest">
+        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1b7cc17c]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2023-04-24T08:38:34 IST" name="Test1" finished-at="2023-04-24T08:38:43 IST" duration-ms="9004">
+      <class name="qalegend.LoginTestCase">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1b7cc17c]" started-at="2023-04-24T08:38:34 IST" name="urlLaunch" finished-at="2023-04-24T08:38:40 IST" duration-ms="5586" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1b7cc17c]" started-at="2023-04-24T08:38:40 IST" name="verifyLoginWithValidUsernameAndValidPassword" data-provider="testdatavalid" finished-at="2023-04-24T08:38:43 IST" duration-ms="2612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qalegend.LoginTestCase@1b7cc17c]" started-at="2023-04-24T08:38:43 IST" name="tearDown" finished-at="2023-04-24T08:38:43 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qalegend.LoginTestCase -->
+    </test> <!-- Test1 -->
+  </suite> <!-- demo -->
+</testng-results>

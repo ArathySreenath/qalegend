@@ -26,6 +26,7 @@ public class Screenshot extends BrowserLaunch{
 		SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
 System.out.println(dateFormat.format(date));
 		return dateFormat.format(date).toString();
+		System.out.println("HELLO");
 	}
 
 }

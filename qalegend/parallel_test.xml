@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demo" parallel="tests" thread-count="2">
+	<parameter name="browserName" value="chrome"/>
+	<test name="testdemo">
+		<classes>
+			<class name="qalegend.LoginTestCase">
+				<methods>
+						<include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+	<test name="testdemo2">
+		<classes>
+			<class name="qalegend.LoginTestCase">
+				<methods>
+						<include name="verifyLoginWithValidUsernameAndValidPassword"/>
+				</methods>
+			</class>
+			
+		</classes>
+	</test>
+</suite>

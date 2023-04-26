@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demo">
+	<parameter name="browserName" value="chrome"/>
+	<test name="testdemo" parallel="classes" thread-count="2">
+		<classes>
+				
+							<class name="qalegend.RoleModule"/>
+
+		</classes>
+	</test>
+</suite>

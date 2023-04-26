@@ -9,25 +9,20 @@ import org.testng.ITestResult;
 import common.functions.BrowserLaunch;
 
 public class Listener extends BrowserLaunch implements ITestListener {
-	
+//	Screenshot screenshotCapture=new Screenshot();
 	public void onTestStart(ITestResult result) {
 		
 	}
 	
 	public void onTestSuccess(ITestResult result) {
-		try {
-			Screenshot.takeScreenshot();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
-		}
+		
 	}
 	
 	public void onTestFailure(ITestResult result) {
 		
 		try {
-			Screenshot.takeScreenshot();
+			
+			Screenshot.takeScreenshot(driver);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

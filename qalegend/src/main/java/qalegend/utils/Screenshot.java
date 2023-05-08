@@ -10,23 +10,31 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import common.functions.BrowserLaunch;
 import constants.Constant;
 
-public class Screenshot extends BrowserLaunch{
-	public  static void takeScreenshot(WebDriver driver ) throws IOException {
-		TakesScreenshot screenshot=(TakesScreenshot)driver;
-		File file=screenshot.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file, new File(System.getProperty("user.dir")+Constant.SCREENSHOTPATH+timestamp()+".png"));
-		
+public class Screenshot {
+	WebDriver driver;
+	public Screenshot(WebDriver driver) {
+		this.driver=driver;
 	}
-	public  static String timestamp()
-	{
-		Date date=new Date();
-		SimpleDateFormat dateFormat=new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
-System.out.println(dateFormat.format(date));
+	
+	public void takeScreenshot() throws IOException {
+		try {
+			System.out.println("screen "+driver);
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File file = screenshot.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(file,new File(System.getProperty("user.dir") + Constant.SCREENSHOTPATH + timestamp() + ".png"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public static String timestamp() {
+		Date date = new Date();
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
+		System.out.println(dateFormat.format(date));
 		return dateFormat.format(date).toString();
-		System.out.println("HELLO");
 	}
 
 }

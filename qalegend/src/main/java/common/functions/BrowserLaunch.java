@@ -33,7 +33,7 @@ public class BrowserLaunch {
 
 	@Parameters("browserName")
 	@BeforeMethod(alwaysRun = true)
-	public void urlLaunch( String browserName) throws Exception {
+	public void urlLaunch( @Optional("chrome")String browserName) throws Exception {
 		property = new Properties();
 		FileInputStream input = new FileInputStream(System.getProperty("user.dir") + Constant.CONFIGfILE);
 		property.load(input);

@@ -1,13 +1,20 @@
 package qalegend;
 
+import java.io.File;
+import java.io.IOException;
+import qalegend.utils.*;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import common.functions.BrowserLaunch;
 import constants.Constant;
 import pages.LoginPage;
-import qalegend.utils.QaDataProvider;
-import qalegend.utils.WaitFunction;
 import retryAnalyser.Retry;
 
 public class LoginTestCase extends BrowserLaunch {
@@ -35,5 +42,6 @@ public class LoginTestCase extends BrowserLaunch {
 		login.endTourClick();
 
 	}
+
 
 }

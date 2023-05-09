@@ -105,6 +105,8 @@ public class UserPage {
 	}
 
 	public void acceptDeleteRequest() throws Exception {
+		wait.explicitWaitUntilElementIsClickable(driver, acceptConfirmationMessage, 30);
+
 		acceptConfirmationMessage.click();
 
 	}

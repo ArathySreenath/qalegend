@@ -6,20 +6,23 @@ import org.testng.asserts.SoftAssert;
 import common.functions.BrowserLaunch;
 import constants.Constant;
 import pages.DashboardPage;
+import pages.LoginPage;
 import pages.RolePage;
 import pages.TaxPage;
 import qalegend.utils.QaDataProvider;
 import qalegend.utils.WaitFunction;
 
 public class RoleModule extends BrowserLaunch {
-	LoginTestCase login = new LoginTestCase();
 	SoftAssert check = new SoftAssert();
 	WaitFunction wait = new WaitFunction();
 
 	@Test(testName = "TestCase18", dataProvider = "testcase18", dataProviderClass = QaDataProvider.class)
-	public void verifyAddRoleFunction(String username, String password, String roleName) {
+	public void verifyAddRoleFunction(String username, String password,String roleName) {
+		
 		DashboardPage dashboard = new DashboardPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.addRole(roleName);
@@ -31,7 +34,9 @@ public class RoleModule extends BrowserLaunch {
 	@Test(testName = "TestCase19", dataProvider = "testCase19", dataProviderClass = QaDataProvider.class)
 	public void verifyEditRoleFunction(String username, String password, String searchData, String updateField) {
 		DashboardPage dashboard = new DashboardPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -43,7 +48,9 @@ public class RoleModule extends BrowserLaunch {
 	@Test(testName = "testCase20", dataProvider = "testCase20", dataProviderClass = QaDataProvider.class)
 	public void verifyValidationMessageShownOnSearchingANonExistingRoleName(String username, String password, String searchData) {
 		DashboardPage dashboard = new DashboardPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);	
+		login.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -56,7 +63,9 @@ public class RoleModule extends BrowserLaunch {
 	public void verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(String username, String password,
 			String searchData) {
 		DashboardPage dashboard = new DashboardPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);	
+		login.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -70,7 +79,9 @@ public class RoleModule extends BrowserLaunch {
 	public void verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage(String username, String password,
 			String searchData) {
 		DashboardPage dashboard = new DashboardPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);

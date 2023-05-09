@@ -8,12 +8,12 @@ import org.testng.asserts.SoftAssert;
 import common.functions.BrowserLaunch;
 import constants.Constant;
 import pages.DashboardPage;
+import pages.LoginPage;
 import pages.TaxPage;
 import qalegend.utils.QaDataProvider;
 import qalegend.utils.WaitFunction;
 
 public class TaxRateModule extends BrowserLaunch {
-	LoginTestCase login = new LoginTestCase();
 	SoftAssert check = new SoftAssert();
 	WaitFunction wait = new WaitFunction();
 
@@ -22,7 +22,9 @@ public class TaxRateModule extends BrowserLaunch {
 			String taxRateData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.addtaxRate(nameData, taxRateData);
 		check.assertEquals(tax.getSuccessMessage(), Constant.TAXRATE_ADDED_SUCCESSFULLY);
@@ -35,7 +37,9 @@ public class TaxRateModule extends BrowserLaunch {
 			String taxRateData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		check.assertEquals(tax.validationMessageOnLeavingBlankField(nameData, taxRateData),
 				Constant.PLEASE_FILL_OUT_THIS_FIELD);
@@ -47,7 +51,9 @@ public class TaxRateModule extends BrowserLaunch {
 			String nameData, String taxRateData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		check.assertEquals(tax.validationMessageOnLeavingTaxRateBlank(nameData, taxRateData),
 				Constant.PLEASE_FILL_OUT_THIS_FIELD);
@@ -60,7 +66,9 @@ public class TaxRateModule extends BrowserLaunch {
 			String nameData, String taxRateData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(search);
 		tax.editTaxRate(nameData, taxRateData);
@@ -73,7 +81,9 @@ public class TaxRateModule extends BrowserLaunch {
 	public void verifyUserIsAbleToDeleteTaxRateSuccessfully(String username, String password, String search) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(search);
 		tax.deleteTaxRate();
@@ -87,7 +97,9 @@ public class TaxRateModule extends BrowserLaunch {
 			String subtax2) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.addTaxGroup(name, subtax1, subtax2);
 		check.assertEquals(tax.getTaxGroupSuccessMessage(), Constant.TAXGROUP_ADDED_SUCCESSFULLY);
@@ -99,7 +111,9 @@ public class TaxRateModule extends BrowserLaunch {
 	public void verifyTaxRateUsedInTaxGroupCannotBeDeleted(String username, String password, String taxRateName) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		TaxPage tax = new TaxPage(driver);
-		login.verifyLoginWithValidUsernameAndValidPassword(username, password);
+		LoginPage login = new LoginPage(driver);
+		login.doLogin(username, password);
+		login.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(taxRateName);
 		tax.deleteTaxRate();

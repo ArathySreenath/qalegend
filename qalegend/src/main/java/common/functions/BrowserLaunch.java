@@ -29,7 +29,6 @@ import qalegend.utils.WaitFunction;
 public class BrowserLaunch {
 	public WebDriver driver;
 	public Properties property;
-	public int x;
 
 	@Parameters("browserName")
 	@BeforeMethod(alwaysRun = true)
@@ -43,18 +42,15 @@ public class BrowserLaunch {
 			options.addArguments("--remote-allow-origins=*");
 			System.setProperty(Constant.CHROMEDRIVER, property.getProperty("chromefilePath"));
 			driver = new ChromeDriver(options);
-			x = 5;
 		}
 		else if(browserName.equals("firefox")) {
 			System.setProperty(Constant.FRIREFOXDRIVER, property.getProperty("firefoxfilePath"));
 			driver = new FirefoxDriver();
-			x = 5;
 		}
 			
 		else if(browserName.equals("edge")) {
 			System.setProperty(Constant.EDGEDRIVER, property.getProperty("edgefilePath"));
 			driver = new EdgeDriver();
-			x = 5;
 		}
 		else {
 			System.out.println("No browser specified");
@@ -72,8 +68,8 @@ public class BrowserLaunch {
 	public void tearDown(ITestResult Result) throws Exception {
 		if (Result.getStatus() == ITestResult.FAILURE) {
 		System.out.println("tear" + driver);
-		Screenshot screenshotCapture = new Screenshot(driver);
-		screenshotCapture.takeScreenshot();
+		Screenshot screenshotCapture = new Screenshot();
+		screenshotCapture.takeScreenshot(driver);
 		}
 
 		driver.close();

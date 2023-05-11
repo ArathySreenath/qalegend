@@ -1,7 +1,10 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,8 +30,10 @@ public class AccountsPage {
 	WebElement accountNumber;
 	@FindBy(id = "opening_balance")
 	WebElement openingBalance;
-	@FindBy(xpath = "//button[@type='submit']")
+	@FindBy(xpath = "//button[contains(text(),'Submit')]")
 	WebElement submit;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement save;
 	@FindBy(xpath = "//*[contains(text(),'Account created successfully')]")
 	WebElement successMessage;
 	@FindBy(xpath = "//input[@type='search']")
@@ -55,6 +60,8 @@ public class AccountsPage {
 	WebElement accountCloseMessage;
 	@FindBy(xpath = "//table/tbody/tr/td[4]")
 	WebElement balance;
+	@FindBy(xpath = "//table/tbody/tr/td[1]")
+	WebElement searchName;
 	@FindBy(xpath = "//button[@class='btn btn-primary']")
 	WebElement submitFundTransfer;
 	@FindBy(name = "from_account")
@@ -63,27 +70,30 @@ public class AccountsPage {
 	WebElement cancelCloseButton;
 	@FindBy(xpath = "//button[contains(text(),'OK')]")
 	WebElement acceptCloseButton;
-	@FindBy(xpath = "//table[@id='other_account_table']/tbody/tr/td[1]")
+	@FindBy(xpath = "//table/tbody/tr/td[1]")
 	WebElement accountNameVerify;
+	
 	WaitFunction wait = new WaitFunction();
 
 	public void addAccount(String accountNameData, String accountNumberData, String openingBalanceData) {
 		addLink.click();
 		PageUtility.enterText(accountName, accountNameData);
+		wait.explicitWaitUntilVisibilityOfElement(driver, accountNumber, 20);
 		PageUtility.enterText(accountNumber, accountNumberData);
 		PageUtility.enterText(openingBalance, openingBalanceData);
-		submit.click();
+		save.click();
+		wait.explicitWaitUntilVisibilityOfElement(driver, successMessage, 20);
 	}
 
 	public void fundTransfer(String searchData, String transferToAccountName, String amountData, String dateOfTransfer)
 			throws Exception {
-		driver.navigate().refresh();
-		PageUtility.enterText(search, searchData);
+		searchAcc(searchData);
 		fundTransferLink.click();
 		wait.explicitWaitUntilVisibilityOfElement(driver, transferToAccount, 30);
 		PageUtility.dropdown(transferToAccount, transferToAccountName, driver);
 		PageUtility.enterText(amount, amountData);
 		PageUtility.enterText(date, dateOfTransfer);
+		wait.explicitWaitUntilVisibilityOfElement(driver, submit, 40);
 		submit.click();
 
 	}
@@ -97,16 +107,17 @@ public class AccountsPage {
 
 	}
 
-	public void search(String searchData) {
+	public void searchAcc(String searchData) throws Exception {
 		driver.navigate().refresh();
 		PageUtility.enterText(search, searchData);
+		PageUtility.mediumDelay();
 
 	}
 
 	public void editAccount(String name) {
 		editButton.click();
 		PageUtility.enterText(accountName, name);
-		submit.click();
+		save.click();
 
 	}
 
@@ -118,6 +129,7 @@ public class AccountsPage {
 
 	public void acceptCloseAccount() {
 		closeLink.click();
+		wait.explicitWaitUntilVisibilityOfElement(driver, acceptCloseButton, 30);
 		acceptCloseButton.click();
 
 	}
@@ -126,10 +138,11 @@ public class AccountsPage {
 		fundTransferLink.click();
 		Select dropdownCheck = new Select(transferToAccount);
 		List<WebElement> options = dropdownCheck.getOptions();
-		boolean present = true;
+		boolean present = false;
 		for (int i = 0; i < options.size(); i++) {
+			System.out.println(options.get(i).getText());
 			if (options.get(i).getText().equals(nameData)) {
-				present = false;
+				present = true;
 				break;
 			}
 		}
@@ -144,12 +157,14 @@ public class AccountsPage {
 		return fundTransferMessage.getText();
 	}
 
-	public StringBuilder getBalance() {
+	public String getBalance() {
+		wait.explicitWaitUntilElementIsClickable(driver, balance, 40);
 		String balanceAmount = balance.getText();
+
 		StringBuilder balanceBuilder = new StringBuilder(balanceAmount);
 		balanceBuilder.deleteCharAt(1);
-		balanceBuilder.substring(0, 4);
-		return balanceBuilder;
+		String correctedBalance = balanceBuilder.substring(0, 4);
+		return correctedBalance;
 	}
 
 	public void setBalance(WebElement balance) {

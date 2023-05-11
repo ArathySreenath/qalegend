@@ -20,6 +20,7 @@ public class PageUtility {
 
 	public static void clickFunction(WebElement element) {
 		element.click();
+		
 	}
 
 	public static void dropdownSelect(WebElement element, String subtax1, String subtax2) {
@@ -43,7 +44,10 @@ public class PageUtility {
 		executor.executeScript("arguments[0].click();", element);
 	}
 
-	
+	public static void mediumDelay() throws InterruptedException
+	{
+		Thread.sleep(2000);
+	}
 
 	
 }

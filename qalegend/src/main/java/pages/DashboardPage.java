@@ -41,7 +41,8 @@ public class DashboardPage {
 	WaitFunction wait = new WaitFunction();
 
 	public void navigateToUserPage() {
-		wait.implicitWaitforElement(driver, 50);
+		driver.navigate().refresh();
+//		wait.explicitWaitUntilElementIsClickable(driver, userManagementLink, 30);
 		userManagementLink.click();
 		userLink.click();
 	}
@@ -55,8 +56,6 @@ public class DashboardPage {
 		driver.navigate().refresh();
 		wait.explicitWaitUntilVisibilityOfElement(driver, homeLink, 30);
 		PageUtility.javascriptClick(driver, homeLink);
-//		JavascriptExecutor executor = (JavascriptExecutor) driver;
-//		executor.executeScript("arguments[0].click();", homeLink);
 
 	}
 	public void navigateToTaxRate()

@@ -13,20 +13,18 @@ import org.openqa.selenium.WebDriver;
 import constants.Constant;
 
 public class Screenshot {
-	WebDriver driver;
-	public Screenshot(WebDriver driver) {
-		this.driver=driver;
-	}
+//	WebDriver driver;
+//	public Screenshot(WebDriver driver) {
+//		this.driver=driver;
+//	}
 	
-	public void takeScreenshot() throws IOException {
-		try {
+	public void takeScreenshot(WebDriver driver) throws IOException {
+	
 			System.out.println("screen "+driver);
 			TakesScreenshot screenshot = (TakesScreenshot) driver;
 			File file = screenshot.getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(file,new File(System.getProperty("user.dir") + Constant.SCREENSHOTPATH + timestamp() + ".png"));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 
 	}
 

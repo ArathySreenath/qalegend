@@ -4,11 +4,16 @@
 	<listeners>
 		<listener class-name="qalegend.utils.Listener" />
 		<listener class-name="reports.ExtentReport" />
-		
 	</listeners>
 	<test name="Test1">
 		<classes>
-			<class name="qalegend.UserManagementModule"/>
+			<class name="qalegend.PaymentAccountModule">
+				<methods>
+					<include name="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown"/>
+				</methods>
+			</class>
+			
+				
 				
 		
 		</classes>

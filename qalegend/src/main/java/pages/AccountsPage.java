@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import qalegend.utils.PageUtility;
 import qalegend.utils.WaitFunction;
 
+
 public class AccountsPage {
 	WebDriver driver;
 
@@ -140,7 +141,6 @@ public class AccountsPage {
 		List<WebElement> options = dropdownCheck.getOptions();
 		boolean present = false;
 		for (int i = 0; i < options.size(); i++) {
-			System.out.println(options.get(i).getText());
 			if (options.get(i).getText().equals(nameData)) {
 				present = true;
 				break;

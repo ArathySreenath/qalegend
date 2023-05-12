@@ -13,7 +13,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 
-public class DataFile {
+public class DataReader {
 	public static Object[][] getDataFromExcel(String filePath, String sheetName)
 			throws EncryptedDocumentException, InvalidFormatException, IOException, org.apache.poi.openxml4j.exceptions.InvalidFormatException {
 

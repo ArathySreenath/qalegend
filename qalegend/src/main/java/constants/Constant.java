@@ -6,7 +6,7 @@ public class Constant {
 	public static final String EDGEDRIVER = "webdriver.edge.driver";
 	public static final String FRIREFOXDRIVER = "webdriver.gecko.driver";
 	public static final String SCREENSHOTPATH = "/src/main/resources/Screenshots/";
-	public static final String DATAFILEPATH = "/src/main/resources/Data/Logindata.xlsx";
+	public static final String DATAFILEPATH = "./src/main/resources/Data/Logindata.xlsx";
 	public static final String INVALID_EXPECTED_URL = "https://qalegend.com/billing/public/login";
 	public static final String VALID_EXPECTED_URL = "https://qalegend.com/billing/public/home";
 	public static final String INACTIVE_USER = "Sorry, account is inactive";

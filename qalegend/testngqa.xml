@@ -7,11 +7,15 @@
 	</listeners>
 	<test name="Test1">
 		<classes>
-			<class name="qalegend.PaymentAccountModule">
-				<methods>
-					<include name="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown"/>
-				</methods>
-			</class>
+			<class name="qalegend.LoginTestCase"/>
+			<class name="qalegend.UserManagementModule"/>
+			<class name="qalegend.RoleModule"/>
+			<class name="qalegend.PaymentAccountModule"/>
+			<class name="qalegend.TaxRateModule"/>
+
+
+
+
 			
 				
 				

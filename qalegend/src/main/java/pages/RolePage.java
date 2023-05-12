@@ -71,6 +71,8 @@ public class RolePage {
 
 	public void deleteRole() {
 		deleteLink.click();
+		WaitFunction wait=new WaitFunction();
+		wait.explicitWaitUntilVisibilityOfElement(driver, acceptDeleteLink, 30);
 		acceptDeleteLink.click();
 
 	}

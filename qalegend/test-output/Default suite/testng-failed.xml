@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qalegend.PaymentAccountModule">
+      <class name="qalegend.LoginTestCase">
         <methods>
-          <include name="verifyBalanceShownInPaymentAccountsPageIsCorrect"/>
+          <include name="verifyLoginWithValidUsernameAndInvalidPassword" invocation-numbers="0"/>
           <include name="urlLaunch"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- qalegend.PaymentAccountModule -->
+      </class> <!-- qalegend.LoginTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

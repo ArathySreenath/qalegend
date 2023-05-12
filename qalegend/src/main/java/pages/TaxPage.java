@@ -72,6 +72,7 @@ public class TaxPage {
 
 	public void deleteTaxRate() {
 		deleteTaxRate.click();
+		wait.explicitWaitUntilElementIsClickable(driver, acceptDeleteConfirmation, 30);
 		acceptDeleteConfirmation.click();
 
 	}

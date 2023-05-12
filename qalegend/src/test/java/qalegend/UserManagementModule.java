@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.github.javafaker.Faker;
+
 import common.functions.BrowserLaunch;
 import constants.Constant;
 import pages.DashboardPage;
@@ -20,17 +22,22 @@ import qalegend.utils.WaitFunction;
 public class UserManagementModule extends BrowserLaunch {
 	WaitFunction waitForLoad = new WaitFunction();
 	SoftAssert check = new SoftAssert();
+	Faker faker=new Faker();
 
 	@Test(testName = "TestCase3", dataProvider = "Userdata", dataProviderClass = QaDataProvider.class, groups = "sanityTest")
-	public void verifyUserCreationWithValidData(String login_userid, String login_password, String first_name,
-			String email, String roleName, String uname, String passwordData, String confirmPassword)
+	public void verifyUserCreationWithValidData(String login_userid, String login_password, String roleName)
 			throws InterruptedException, IOException {
 		LoginPage login = new LoginPage(driver);
 		DashboardPage dashboard = new DashboardPage(driver);
 		UserPage user = new UserPage(driver);
 		login.doLogin(login_userid, login_password);
 		dashboard.navigateToUserPage();
-		user.CreateUser(first_name, email, roleName, uname, passwordData, confirmPassword);
+		String first_name=faker.name().firstName();
+		String email =faker.internet().emailAddress();
+		String uname=faker.name().username();
+		String passwordData=faker.internet().password(8, 15, true, true);
+		
+		user.CreateUser(first_name, email, roleName, uname, passwordData, passwordData);
 		check.assertTrue(user.successMessage());
 		check.assertAll();
 

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="demo">
-	<parameter name="browserName" value="chrome"/>
+	<parameter name="browserName" value="edge"/>
 	<test name="testdemo" parallel="methods" thread-count="2">
 		<classes>
 			<class name="qalegend.LoginTestCase">

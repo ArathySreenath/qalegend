@@ -22,10 +22,6 @@ public class LoginPage {
 	WebElement password;
 	@FindBy(css="button[type='submit']")
 	WebElement submit;
-	@FindBy(xpath="//button[contains(text(),'End tour')]")
-	WebElement endTour;
-	@FindBy(xpath="//h1[contains(text(),'Welcome')]")
-	WebElement welcomeText;
 	
 	public void doLogin(String uname,String pwd) {
 		PageUtility.enterText(user, uname);
@@ -39,15 +35,7 @@ public class LoginPage {
 	return userNameDisplay;
 	
 	}
-	public boolean validLogin() {
-		boolean welcomeDisplay=welcomeText.isDisplayed();
-		return welcomeDisplay;
-	}
 	
-	public void endTourClick(){
-		WaitFunction wait=new WaitFunction();
-		wait.fluentWaitFunction(driver, 50, 5, endTour);
-		endTour.click();
 		
 	}
-}
+

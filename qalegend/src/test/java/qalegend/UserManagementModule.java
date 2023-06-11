@@ -20,7 +20,6 @@ import qalegend.utils.Screenshot;
 import qalegend.utils.WaitFunction;
 
 public class UserManagementModule extends BrowserLaunch {
-	WaitFunction waitForLoad = new WaitFunction();
 	SoftAssert check = new SoftAssert();
 	Faker faker=new Faker();
 
@@ -118,7 +117,6 @@ public class UserManagementModule extends BrowserLaunch {
 
 	}
 
-//
 	@Test(testName = "TestCase9", dataProvider = "editUserCase", dataProviderClass = QaDataProvider.class)
 	public void verifyEditUserFunction(String login_user, String login_password, String searchValue,
 			String salesComissionPercentage) throws Exception {

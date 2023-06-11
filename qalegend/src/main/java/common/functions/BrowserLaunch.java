@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -49,8 +50,10 @@ public class BrowserLaunch {
 		}
 			
 		else if(browserName.equals("edge")) {
+			EdgeOptions options = new EdgeOptions();
+			options.addArguments("--remote-allow-origins=*");
 			System.setProperty(Constant.EDGEDRIVER, property.getProperty("edgefilePath"));
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(options);
 		}
 		else {
 			System.out.println("No browser specified");
@@ -65,11 +68,11 @@ public class BrowserLaunch {
 	}
 
 	@AfterMethod
-	public void tearDown(ITestResult Result) throws Exception {
-		if (Result.getStatus() == ITestResult.FAILURE) {
+	public void tearDown(ITestResult result) throws Exception {
+		if (result.getStatus() == ITestResult.FAILURE) {
 		System.out.println("tear" + driver);
 		Screenshot screenshotCapture = new Screenshot();
-		screenshotCapture.takeScreenshot(driver);
+		screenshotCapture.takeScreenshot(driver,result.getMethod().getMethodName());
 		}
 
 		driver.close();

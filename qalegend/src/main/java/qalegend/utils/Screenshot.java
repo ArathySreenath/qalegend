@@ -18,12 +18,12 @@ public class Screenshot {
 //		this.driver=driver;
 //	}
 	
-	public void takeScreenshot(WebDriver driver) throws IOException {
+	public void takeScreenshot(WebDriver driver,String fileName) throws IOException {
 	
 			System.out.println("screen "+driver);
 			TakesScreenshot screenshot = (TakesScreenshot) driver;
 			File file = screenshot.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(file,new File(System.getProperty("user.dir") + Constant.SCREENSHOTPATH + timestamp() + ".png"));
+			FileUtils.copyFile(file,new File(System.getProperty("user.dir") + Constant.SCREENSHOTPATH +fileName+ timestamp() + ".png"));
 		
 
 	}

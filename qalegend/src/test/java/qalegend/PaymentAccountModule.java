@@ -24,8 +24,9 @@ public class PaymentAccountModule extends BrowserLaunch {
 			String accNum, String openBalance) {
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
 		DashboardPage dashboard = new DashboardPage(driver);
+		dashboard.endTourClick();
+
 		AccountsPage accounts = new AccountsPage(driver);
 		dashboard.navigateToAccounts();
 		accounts.addAccount(nameData, accNum, openBalance);
@@ -41,7 +42,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.fundTransfer(searchData, transferTo, amount, date);
 		check.assertEquals(accounts.getFundTransferMessage(), Constant.FUND_TRANSFERRED_MESSAGE);
@@ -57,7 +58,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.addAccount(nameData, accNum, openBalance);
 		accounts.fundTransfer(searchData, transferTo, amount, date);
@@ -74,7 +75,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.searchAcc(searchData);
 		accounts.deposit(amount, transferFrom, date);
@@ -91,7 +92,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.searchAcc(searchData);
 		accounts.editAccount(name);
@@ -107,7 +108,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.searchAcc(searchData);
 		accounts.cancelCloseAccount();
@@ -125,7 +126,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.searchAcc(searchData);
 		accounts.acceptCloseAccount();
@@ -141,7 +142,7 @@ public class PaymentAccountModule extends BrowserLaunch {
 		AccountsPage accounts = new AccountsPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToAccounts();
 		accounts.searchAcc(searchData);
 		boolean ifPresent = accounts.checkIfCloseAccountDisplayed(closeAccount);

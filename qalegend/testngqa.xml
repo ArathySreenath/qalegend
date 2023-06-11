@@ -5,21 +5,16 @@
 		<listener class-name="qalegend.utils.Listener" />
 		<listener class-name="reports.ExtentReport" />
 	</listeners>
-	<test name="Test1">
+	<test name="AutomationTests">
 		<classes>
+			
 			<class name="qalegend.LoginTestCase"/>
 			<class name="qalegend.UserManagementModule"/>
+			<class name="qalegend.TaxRateModule"/>
 			<class name="qalegend.RoleModule"/>
 			<class name="qalegend.PaymentAccountModule"/>
-			<class name="qalegend.TaxRateModule"/>
-
-
-
-
-			
 				
 				
-		
 		</classes>
 	</test>
 	

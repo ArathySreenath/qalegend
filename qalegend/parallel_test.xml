@@ -1,13 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="demo" parallel="tests" thread-count="2">
-	<parameter name="browserName" value="edge"/>
-	<test name="testdemo">
+	<parameter name="browserName" value="chrome"/>
+	<test name="testdemo1">
 		<classes>
 			<class name="qalegend.LoginTestCase">
 				<methods>
 						<include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
 				</methods>
 			</class>
+			
 			
 		</classes>
 	</test>
@@ -21,4 +22,27 @@
 			
 		</classes>
 	</test>
+	<test name="testdemo3">
+		<classes>
+			<class name="qalegend.UserManagementModule">
+				<methods>
+						<include name="verifyUserCreationWithValidData"/>
+				</methods>
+			</class>
+			
+			
+		</classes>
+	</test>
+	<test name="testdemo4">
+		<classes>
+			<class name="qalegend.UserManagementModule">
+				<methods>
+						<include name="verifySearchUserFunctionality"/>
+				</methods>
+			</class>
+			
+			
+		</classes>
+	</test>
+	
 </suite>

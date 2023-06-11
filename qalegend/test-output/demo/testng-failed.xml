@@ -6,36 +6,15 @@
     <listener class-name="qalegend.utils.Listener"/>
     <listener class-name="reports.ExtentReport"/>
   </listeners>
-  <test thread-count="5" name="Test1(failed)">
+  <test thread-count="5" name="AutomationTests(failed)">
     <classes>
-      <class name="qalegend.UserManagementModule">
-        <methods>
-          <include name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" invocation-numbers="0"/>
-          <include name="urlLaunch"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- qalegend.UserManagementModule -->
-      <class name="qalegend.RoleModule">
-        <methods>
-          <include name="urlLaunch"/>
-          <include name="tearDown"/>
-          <include name="verifyValidationMessageShownOnSearchingANonExistingRoleName" invocation-numbers="0"/>
-          <include name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- qalegend.RoleModule -->
       <class name="qalegend.PaymentAccountModule">
         <methods>
-          <include name="verifyBalanceIncreasesWithDeposits" invocation-numbers="0"/>
           <include name="verifyUserIsAbleToAddAccountSuccessfully" invocation-numbers="0"/>
-          <include name="verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp" invocation-numbers="0"/>
-          <include name="verifyUserIsAbleToTransferFundSuccessfully" invocation-numbers="0"/>
-          <include name="verifyBalanceShownInPaymentAccountsPageIsCorrect" invocation-numbers="0"/>
           <include name="urlLaunch"/>
-          <include name="verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp" invocation-numbers="0"/>
-          <include name="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- qalegend.PaymentAccountModule -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- AutomationTests(failed) -->
 </suite> <!-- Failed suite [demo] -->

@@ -14,6 +14,7 @@ import org.testng.asserts.SoftAssert;
 
 import common.functions.BrowserLaunch;
 import constants.Constant;
+import pages.DashboardPage;
 import pages.LoginPage;
 import retryAnalyser.Retry;
 
@@ -36,10 +37,11 @@ public class LoginTestCase extends BrowserLaunch {
 	public void verifyLoginWithValidUsernameAndValidPassword(String uname, String password) {
 
 		LoginPage login = new LoginPage(driver);
+		DashboardPage dashboard=new DashboardPage(driver);
 		login.doLogin(uname, password);
 		SoftAssert verify = new SoftAssert();
-		verify.assertTrue(login.validLogin());
-		login.endTourClick();
+		verify.assertTrue(dashboard.validLogin());
+		dashboard.endTourClick();
 
 	}
 

@@ -26,7 +26,6 @@ public class ExtentReport implements IReporter {
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
-
 			for (ISuiteResult r : result.values()) {
 				ITestContext context = r.getTestContext();
 
@@ -49,9 +48,9 @@ public class ExtentReport implements IReporter {
 
 				test.setStartedTime(getTime(result.getStartMillis()));
 				test.setEndedTime(getTime(result.getEndMillis()));
-
 				for (String group : result.getMethod().getGroups())
 					test.assignCategory(group);
+				
 
 				if (result.getThrowable() != null) {
 					test.log(status, result.getThrowable());

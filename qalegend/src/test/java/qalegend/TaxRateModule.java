@@ -24,7 +24,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.addtaxRate(nameData, taxRateData);
 		check.assertEquals(tax.getSuccessMessage(), Constant.TAXRATE_ADDED_SUCCESSFULLY);
@@ -39,7 +39,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		check.assertEquals(tax.validationMessageOnLeavingBlankField(nameData, taxRateData),
 				Constant.PLEASE_FILL_OUT_THIS_FIELD);
@@ -53,7 +53,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		check.assertEquals(tax.validationMessageOnLeavingTaxRateBlank(nameData, taxRateData),
 				Constant.PLEASE_FILL_OUT_THIS_FIELD);
@@ -68,7 +68,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(search);
 		tax.editTaxRate(nameData, taxRateData);
@@ -83,7 +83,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(search);
 		tax.deleteTaxRate();
@@ -99,7 +99,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.addTaxGroup(name, subtax1, subtax2);
 		check.assertEquals(tax.getTaxGroupSuccessMessage(), Constant.TAXGROUP_ADDED_SUCCESSFULLY);
@@ -113,7 +113,7 @@ public class TaxRateModule extends BrowserLaunch {
 		TaxPage tax = new TaxPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToTaxRate();
 		tax.searchTaxRate(taxRateName);
 		tax.deleteTaxRate();

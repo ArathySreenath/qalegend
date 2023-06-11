@@ -43,7 +43,7 @@
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
-					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='exceptions-view' onclick="_updateCurrentStage(2)"><i class='mdi-action-bug-report'></i>Exceptions</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -54,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2023-05-11 20:59:24</span>
+					<span class='suite-started-time'>2023-06-11 19:35:53</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 8m 53s+766ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 5s+256ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 8m 53s+766ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 5s+256ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2023-05-11 20:50:30</span> 
+							<span class='panel-lead suite-started-time'>2023-06-11 19:35:48</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2023-05-11 20:59:24</span> 
+							<span class='panel-lead suite-ended-time'>2023-06-11 19:35:53</span> 
 						</div> 
 					</div>
 				</div>
@@ -188,37 +188,6 @@
 						</div>
 					</div>
 				</div>
-					<div class='category-summary-view'>
-						<div class='col l4 m6 s12'>
-							<div class='card-panel'>
-								<span class='label info outline right'>Categories</span>
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-										</tr>
-									</thead>
-									<tbody>
-											<tr>
-												<td>
-													regression
-												</td>
-											</tr>
-											<tr>
-												<td>
-													sanityTest
-												</td>
-											</tr>
-											<tr>
-												<td>
-													smokeTest
-												</td>
-											</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
 			</div>
 			<!-- /dashboard -->
 			
@@ -242,18 +211,6 @@
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
 							</div>
-								<div>
-									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
-										<i class='mdi-maps-local-offer'></i>
-									</a>
-									<ul id='category-toggle' class='dropdown-content'>
-											<li class='regression'><a href='#!'>regression</a></li>
-											<li class='sanityTest'><a href='#!'>sanityTest</a></li>
-											<li class='smokeTest'><a href='#!'>smokeTest</a></li>
-										<li class='divider'></li>
-										<li class='clear'><a href='#!'>Clear Filters</a></li>
-									</ul>
-								</div>
 							<div>
 								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
 									<i class='mdi-navigation-close'></i>
@@ -281,847 +238,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='4520e4ae-2666-439a-acc3-89d3deb3b45a'>
-											<div class='test-head'>
-												<span class='test-name'>verifyInactiveUserCase </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:51:18</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:51:35</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 17s+771ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:51:35</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='11ad91ca-da39-4035-b3fa-e2d53686534e'>
-											<div class='test-head'>
-												<span class='test-name'>verifyValidationMessageShownOnSearchingANonExistingRoleName </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:54:47</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:54:54</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+388ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:54:54</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='ff7c8471-cf42-48b4-a04a-26cb0a699d12'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToTransferFundSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:57:01</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:57:12</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 11s+216ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:57:12</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='f0862ebd-1f9c-41a1-82bb-8cf5ab18c9e4'>
-											<div class='test-head'>
-												<span class='test-name'>verifySearchUserFunctionality </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  regression'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:51:45</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:51:53</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+357ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>regression</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:51:53</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='cabc1be6-1331-448e-8c53-692e735eb4ee'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:57:22</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:57:34</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+507ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:57:34</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='2ac5d451-b2e5-43e2-a2ac-271e0dafc2b2'>
-											<div class='test-head'>
-												<span class='test-name'>verifyAccountCanBeEditedSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:55:02</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:55:13</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+588ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:55:13</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='c18fbe96-768b-4d71-931f-98d90472e4eb'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserNotDeletedOnClickingCancelOfConfirmationMessage </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  regression'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:52:36</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:52:45</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+530ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>regression</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:52:45</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='3922348b-253e-4cff-a02f-4d44412ae3be'>
-											<div class='test-head'>
-												<span class='test-name'>verifyLoginWithValidUsernameAndValidPassword </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  smoketest sanitytest'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:50:42</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:50:46</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+864ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>smokeTest</span>
-																<span class='category text-white'>sanityTest</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:50:46</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='6a9b218f-1df0-4c1e-9b13-a90d4fcd7043'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserDeletedOnAcceptingConfirmationMessage </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:52:20</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:52:30</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+58ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:52:30</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='078a624d-f9e3-4d01-9c07-9533c89c9279'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:56:44</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:56:53</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+735ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:56:53</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='02f353b0-10cc-4be8-b900-4ce75126ec08'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:59:15</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:59:23</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+396ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:59:23</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='d89caaa0-be33-430f-9ab8-2631ab7c15e6'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:54:17</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:54:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+327ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:54:24</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='9d077134-8a97-4260-b254-0f64f751e23f'>
-											<div class='test-head'>
-												<span class='test-name'>verifyTaxRateCreationOnEnteringValidData </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:57:42</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:57:50</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+335ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:57:50</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='d6ba2abc-b12e-4625-9530-dfdf759f5737'>
-											<div class='test-head'>
-												<span class='test-name'>verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:56:07</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:56:20</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 13s+601ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:56:20</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='2e91f7ba-5841-46e4-8de0-73c6f2b0856a'>
-											<div class='test-head'>
-												<span class='test-name'>verifyLoginWithValidUsernameAndInvalidPassword </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  sanitytest'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:50:30</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:50:32</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+445ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>sanityTest</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:50:32</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='eccef29a-2bcb-4a95-a8e7-2b0595874fff'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToAddTaxGroupSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:58:13</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:58:21</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+549ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:58:21</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='66b0cab5-f94f-4cde-8823-3b0cce9d8b66'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:58:59</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:59:07</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+452ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:59:07</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='4ea25a9b-f219-4e81-b485-41021453c9d1'>
-											<div class='test-head'>
-												<span class='test-name'>verifyEditRoleFunction </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:53:53</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:54:05</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+306ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:54:05</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='d65b12a1-219d-45fe-a332-d8b1a2ac4686'>
-											<div class='test-head'>
-												<span class='test-name'>verifyTaxRateUsedInTaxGroupCannotBeDeleted </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:57:58</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:58:05</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+703ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:58:05</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='33a77d37-3701-4f10-9e50-2d02b343009c'>
-											<div class='test-head'>
-												<span class='test-name'>verifyBalanceIncreasesWithDeposits </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:55:21</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:55:35</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 13s+660ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:55:35</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='871c3ad5-1f9c-48ad-9d3a-a58ded690632'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToDeleteTaxRateSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:58:28</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:58:36</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+662ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:58:36</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='8e93c5b5-ddb3-4d3d-936b-82547cd83f65'>
-											<div class='test-head'>
-												<span class='test-name'>verifyViewUserFunctionality </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  regression'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:52:54</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:53:03</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+29ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>regression</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:53:03</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='f270dd4d-3b9e-4460-ac20-39acf96fd704'>
+										<li class='collection-item test displayed active fail ' extentid='8ac11814-5230-4d18-a1b3-705a76fb9cbd'>
 											<div class='test-head'>
 												<span class='test-name'>verifyUserIsAbleToAddAccountSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:56:29</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:56:36</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+318ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-06-11 19:35:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-06-11 19:35:52</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+73ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -1137,271 +264,68 @@
 														</thead>
 														<tbody>
 																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:56:36</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='a8ef27fb-eb62-49c9-81f5-12d2b261e1f4'>
-											<div class='test-head'>
-												<span class='test-name'>verifyEditUserFunction </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:50:55</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:51:07</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+140ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:51:07</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='9dcba457-de60-4745-ad79-2e7961612efa'>
-											<div class='test-head'>
-												<span class='test-name'>verifyBalanceShownInPaymentAccountsPageIsCorrect </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:55:42</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:55:58</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 16s+277ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:55:58</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='62c4e597-735f-4b30-becd-3f8002496f0c'>
-											<div class='test-head'>
-												<span class='test-name'>verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:53:13</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:53:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+748ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:53:24</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='71778a49-836a-4eee-957a-789142ecdec0'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:54:33</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:54:40</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+594ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:54:40</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='fa04dc25-7ab1-4b8c-b8db-3c13a39cef8a'>
-											<div class='test-head'>
-												<span class='test-name'>verifyAddRoleFunction </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:53:33</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:53:44</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 11s+367ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:53:44</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='3e35a7d4-2875-4a01-a583-8f6f86556143'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserIsAbleToEditTaxRateSuccessfully </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:58:43</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:58:51</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+710ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:58:51</td>
-																	<td class='step-details'>Test passed</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='f94f21bf-db99-4f50-a996-0df3e3a1073a'>
-											<div class='test-head'>
-												<span class='test-name'>verifyUserCreationWithValidData </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  sanitytest'></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-05-11 20:51:59</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-05-11 20:52:12</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+528ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-														<div class='categories'>
-																<span class='category text-white'>sanityTest</span>
-														</div>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>20:52:12</td>
-																	<td class='step-details'>Test passed</td>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>19:35:52</td>
+																	<td class='step-details'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#">...</a> is not clickable at point (115, 468). Other element would receive the click: <div class="tour-backdrop bottom" style="top: -2.44141e-05px; left: 0px; height: 1561px; width: 1530px;"></div>
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cee28e0109db864aa4840f7f5a34b4ef, clickElement {id=BB7873701070F93C246D76D7E0C3E0AD_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52883/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cee28e0109db864aa4840f7f5a34b4ef)] -> link text: Payment Accounts]
+Session ID: cee28e0109db864aa4840f7f5a34b4ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at qalegend.utils.PageUtility.clickFunction(PageUtility.java:22)
+	at pages.DashboardPage.navigateToAccounts(DashboardPage.java:82)
+	at qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(PaymentAccountModule.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea></td>
 																</tr>
 														</tbody>
 													</table>
@@ -1438,16 +362,19 @@
 			<!-- /tests -->
 			
 			<!-- categories -->
-				<div id='categories-view' class='row _addedTable hide'>
+			<!-- /categories -->
+			
+			<!-- exceptions -->
+				<div id='exceptions-view' class='row _addedTable hide'>
 					<div class='col _addedCell1'>
 						<div class='contents'>
 							<div class='card-panel heading'>
-								<h5>Categories</h5>
+								<h5>Defects</h5>
 							</div>
 							<div class='card-panel filters'>
 								<div class='search' alt='Search tests' title='Search tests'>
 									<div class='input-field left'>
-										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
 									</div>
 									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
 										<i class='mdi-action-search'></i>
@@ -1456,128 +383,90 @@
 							</div>
 							<div class='card-panel no-padding-h no-padding-v'>
 								<div class='wrapper'>
-									<ul id='cat-collection' class='cat-collection'>
-											<li class='category-item displayed'>
-												<div class='cat-head'>
-													<span class='category-name'>regression</span>
+									<ul id='exception-collection' class='exception-collection'>
+											<li class='exception-item displayed'>
+												<div class='exception-head'>
+													<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
 												</div>
-												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 3</span>
+												<div class='exception-test-count'>
+													<span class='fail label'>1</span>
 												</div>
-												<div class='cat-body'>
-													<div class='category-status-counts'>
-														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>3</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
-														</div>
-													</div>
-													<div class='cat-tests'>
+												<div class='exception-body'>
+													<div class='exception-tests'>
 														<table class='bordered'>
 															<thead>
 																<tr>
 																	<th>RunDate</th>
 																	<th>Test Name</th>
-																	<th>Status</th>
+																	<th>Exception</th>
 																</tr>
 															</thead>
 															<tbody>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:51:45</td>
-																		<td><span class='category-link linked' extentid='f0862ebd-1f9c-41a1-82bb-8cf5ab18c9e4'>verifySearchUserFunctionality</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:52:36</td>
-																		<td><span class='category-link linked' extentid='c18fbe96-768b-4d71-931f-98d90472e4eb'>verifyUserNotDeletedOnClickingCancelOfConfirmationMessage</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:52:54</td>
-																		<td><span class='category-link linked' extentid='8e93c5b5-ddb3-4d3d-936b-82547cd83f65'>verifyViewUserFunctionality</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-															<tbody>
-														</table>
-													</div>
-												</div> 
-											</li>
-											<li class='category-item displayed'>
-												<div class='cat-head'>
-													<span class='category-name'>sanityTest</span>
-												</div>
-												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 3</span>
-												</div>
-												<div class='cat-body'>
-													<div class='category-status-counts'>
-														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>3</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
-														</div>
-													</div>
-													<div class='cat-tests'>
-														<table class='bordered'>
-															<thead>
-																<tr>
-																	<th>RunDate</th>
-																	<th>Test Name</th>
-																	<th>Status</th>
-																</tr>
-															</thead>
-															<tbody>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:50:42</td>
-																		<td><span class='category-link linked' extentid='3922348b-253e-4cff-a02f-4d44412ae3be'>verifyLoginWithValidUsernameAndValidPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:50:30</td>
-																		<td><span class='category-link linked' extentid='2e91f7ba-5841-46e4-8de0-73c6f2b0856a'>verifyLoginWithValidUsernameAndInvalidPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:51:59</td>
-																		<td><span class='category-link linked' extentid='f94f21bf-db99-4f50-a996-0df3e3a1073a'>verifyUserCreationWithValidData</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-															<tbody>
-														</table>
-													</div>
-												</div> 
-											</li>
-											<li class='category-item displayed'>
-												<div class='cat-head'>
-													<span class='category-name'>smokeTest</span>
-												</div>
-												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 1</span>
-												</div>
-												<div class='cat-body'>
-													<div class='category-status-counts'>
-														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
-														</div>
-													</div>
-													<div class='cat-tests'>
-														<table class='bordered'>
-															<thead>
-																<tr>
-																	<th>RunDate</th>
-																	<th>Test Name</th>
-																	<th>Status</th>
-																</tr>
-															</thead>
-															<tbody>
-																	<tr class='pass'>
-																		<td>2023-05-11 20:50:42</td>
-																		<td><span class='category-link linked' extentid='3922348b-253e-4cff-a02f-4d44412ae3be'>verifyLoginWithValidUsernameAndValidPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-															<tbody>
+                                                                   <tr class='fail'>
+                                                                       <td>2023-06-11 19:35:48</td>
+                                                                       <td><span class='exception-link linked' extentid='8ac11814-5230-4d18-a1b3-705a76fb9cbd'>verifyUserIsAbleToAddAccountSuccessfully</span></td>
+                                                                       <td><pre class='exception-message'>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#">...</a> is not clickable at point (115, 468). Other element would receive the click: <div class="tour-backdrop bottom" style="top: -2.44141e-05px; left: 0px; height: 1561px; width: 1530px;"></div>
+  (Session info: chrome=114.0.5735.110)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cee28e0109db864aa4840f7f5a34b4ef, clickElement {id=BB7873701070F93C246D76D7E0C3E0AD_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52883/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (cee28e0109db864aa4840f7f5a34b4ef)] -> link text: Payment Accounts]
+Session ID: cee28e0109db864aa4840f7f5a34b4ef
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at qalegend.utils.PageUtility.clickFunction(PageUtility.java:22)
+	at pages.DashboardPage.navigateToAccounts(DashboardPage.java:82)
+	at qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(PaymentAccountModule.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></td>
+                                                                   </tr>
+                                                            </tbody>
 														</table>
 													</div>
 												</div> 
@@ -1587,19 +476,16 @@
 							</div>
 						</div>
 					</div>
-					<div id='cat-details-wrapper' class='col _addedCell2'>
+					<div id='exception-details-wrapper' class='col _addedCell2'>
 						<div class='contents'>
 							<div class='card-panel details-view'>
-								<h5 class='cat-name'></h5>
-								<div class='cat-container'>
+								<h5 class='exception-name'></h5>
+								<div class='exception-container'>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			<!-- /categories -->
-			
-			<!-- exceptions -->
 			<!-- /exceptions -->
 			
 			<!-- testrunner logs -->

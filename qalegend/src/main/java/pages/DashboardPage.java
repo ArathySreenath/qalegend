@@ -37,9 +37,23 @@ public class DashboardPage {
 	WebElement paymentAccountsLink;
 	@FindBy(linkText="List Accounts")
 	WebElement listAccountsLink;
+	@FindBy(xpath="//button[contains(text(),'End tour')]")
+	WebElement endTour;
+	@FindBy(xpath="//h1[contains(text(),'Welcome')]")
+	WebElement welcomeText;
+	
 	
 	WaitFunction wait = new WaitFunction();
-
+	public boolean validLogin() {
+		boolean welcomeDisplay=welcomeText.isDisplayed();
+		return welcomeDisplay;
+	}
+	
+	public void endTourClick(){
+		wait.fluentWaitFunction(driver, 50, 5, endTour);
+		endTour.click();
+	}
+	
 	public void navigateToUserPage() {
 		driver.navigate().refresh();
 //		wait.explicitWaitUntilElementIsClickable(driver, userManagementLink, 30);

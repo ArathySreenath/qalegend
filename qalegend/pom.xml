@@ -17,7 +17,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testngqa.xml</suiteXmlFile>
+						<suiteXmlFile>groupTesting.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

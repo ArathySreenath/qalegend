@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import common.functions.BrowserLaunch;
 import qalegend.utils.PageUtility;
 import qalegend.utils.WaitFunction;
 
@@ -73,7 +74,6 @@ public class AccountsPage {
 	WebElement acceptCloseButton;
 	@FindBy(xpath = "//table/tbody/tr/td[1]")
 	WebElement accountNameVerify;
-	
 	WaitFunction wait = new WaitFunction();
 
 	public void addAccount(String accountNameData, String accountNumberData, String openingBalanceData) {

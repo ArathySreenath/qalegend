@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browserName" value="chrome"/>
-  <listeners>
-    <listener class-name="qalegend.utils.Listener"/>
-    <listener class-name="reports.ExtentReport"/>
-  </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <parameter name="browserName" value="edge"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browserName" value="edge"/>
     <classes>
       <class name="qalegend.LoginTestCase">
         <methods>
-          <include name="verifyLoginWithValidUsernameAndValidPassword" invocation-numbers="0"/>
+          <include name="verifyLoginWithValidUsernameAndValidPassword"/>
           <include name="urlLaunch"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- qalegend.LoginTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="fireTest(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="qalegend.UserManagementModule">
+        <methods>
+          <include name="verifyViewUserFunctionality"/>
+          <include name="urlLaunch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- qalegend.UserManagementModule -->
+    </classes>
+  </test> <!-- fireTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -22,7 +22,7 @@ public class RoleModule extends BrowserLaunch {
 		DashboardPage dashboard = new DashboardPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.addRole(roleName);
@@ -36,7 +36,7 @@ public class RoleModule extends BrowserLaunch {
 		DashboardPage dashboard = new DashboardPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -45,12 +45,12 @@ public class RoleModule extends BrowserLaunch {
 		check.assertAll();
 
 	}
-	@Test(testName = "testCase20", dataProvider = "testCase20", dataProviderClass = QaDataProvider.class)
+	@Test(testName = "testCase20", dataProvider = "testCase20",groups="smokeTest", dataProviderClass = QaDataProvider.class)
 	public void verifyValidationMessageShownOnSearchingANonExistingRoleName(String username, String password, String searchData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);	
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -59,13 +59,13 @@ public class RoleModule extends BrowserLaunch {
 
 	}
 
-	@Test(testName = "TestCase21", dataProvider = "testcase21", dataProviderClass = QaDataProvider.class)
+	@Test(testName = "TestCase21", dataProvider = "testcase21",groups="smokeTest", dataProviderClass = QaDataProvider.class)
 	public void verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(String username, String password,
 			String searchData) {
 		DashboardPage dashboard = new DashboardPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);	
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);
@@ -81,7 +81,7 @@ public class RoleModule extends BrowserLaunch {
 		DashboardPage dashboard = new DashboardPage(driver);
 		LoginPage login = new LoginPage(driver);
 		login.doLogin(username, password);
-		login.endTourClick();
+		dashboard.endTourClick();
 		dashboard.navigateToRolePage();
 		RolePage role = new RolePage(driver);
 		role.searchRole(searchData);

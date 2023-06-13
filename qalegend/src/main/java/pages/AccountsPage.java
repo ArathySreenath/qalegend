@@ -23,7 +23,6 @@ public class AccountsPage {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-
 	@FindBy(xpath = "//button[@class='btn btn-primary btn-modal pull-right']")
 	WebElement addLink;
 	@FindBy(id = "name")

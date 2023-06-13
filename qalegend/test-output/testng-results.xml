@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="15" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-13T20:14:27 IST" name="Suite" finished-at="2023-06-13T20:17:34 IST" duration-ms="186391">
+  <suite started-at="2023-06-13T20:37:24 IST" name="demo" finished-at="2023-06-13T20:44:10 IST" duration-ms="406314">
     <groups>
       <group name="regression">
-        <method signature="UserManagementModule.verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" name="verifySearchUserFunctionality" class="qalegend.UserManagementModule"/>
-        <method signature="UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" class="qalegend.UserManagementModule"/>
-        <method signature="UserManagementModule.verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" name="verifyViewUserFunctionality" class="qalegend.UserManagementModule"/>
+        <method signature="UserManagementModule.verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifySearchUserFunctionality" class="qalegend.UserManagementModule"/>
+        <method signature="UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" class="qalegend.UserManagementModule"/>
+        <method signature="UserManagementModule.verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyViewUserFunctionality" class="qalegend.UserManagementModule"/>
       </group> <!-- regression -->
       <group name="smokeTest">
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" class="qalegend.RoleModule"/>
-        <method signature="RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" class="qalegend.RoleModule"/>
+        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
+        <method signature="RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" class="qalegend.RoleModule"/>
+        <method signature="RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" class="qalegend.RoleModule"/>
       </group> <!-- smokeTest -->
       <group name="sanityTest">
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" name="verifyLoginWithValidUsernameAndInvalidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="UserManagementModule.verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" name="verifyUserCreationWithValidData" class="qalegend.UserManagementModule"/>
+        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndInvalidPassword" class="qalegend.LoginTestCase"/>
+        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
+        <method signature="UserManagementModule.verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyUserCreationWithValidData" class="qalegend.UserManagementModule"/>
       </group> <!-- sanityTest -->
     </groups>
-    <test started-at="2023-06-13T20:14:27 IST" name="Test" finished-at="2023-06-13T20:17:34 IST" duration-ms="186391">
-      <class name="qalegend.UserManagementModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:14:44 IST" name="urlLaunch" finished-at="2023-06-13T20:14:49 IST" duration-ms="4339" status="PASS">
+    <test started-at="2023-06-13T20:37:24 IST" name="AutomationTests" finished-at="2023-06-13T20:44:10 IST" duration-ms="406314">
+      <class name="qalegend.PaymentAccountModule">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:06 IST" name="urlLaunch" finished-at="2023-06-13T20:42:12 IST" duration-ms="5177" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,544 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:14:49 IST" name="verifySearchUserFunctionality" data-provider="searchUser" finished-at="2023-06-13T20:14:56 IST" duration-ms="7060" status="PASS">
+        <test-method signature="verifyAccountCanBeEditedSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:12 IST" name="verifyAccountCanBeEditedSuccessfully" data-provider="testCase27" finished-at="2023-06-13T20:42:20 IST" duration-ms="8796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[195edit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[195]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountCanBeEditedSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:20 IST" name="tearDown" finished-at="2023-06-13T20:42:21 IST" duration-ms="231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAccountCanBeEditedSuccessfully status=SUCCESS method=PaymentAccountModule.verifyAccountCanBeEditedSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:21 IST" name="urlLaunch" finished-at="2023-06-13T20:42:26 IST" duration-ms="5339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyBalanceIncreasesWithDeposits(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:26 IST" name="verifyBalanceIncreasesWithDeposits" data-provider="testCase26" finished-at="2023-06-13T20:42:38 IST" duration-ms="12341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[depositcheck]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[transfercheck]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[04/04/2023]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[3200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBalanceIncreasesWithDeposits -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:38 IST" name="tearDown" finished-at="2023-06-13T20:42:39 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBalanceIncreasesWithDeposits status=SUCCESS method=PaymentAccountModule.verifyBalanceIncreasesWithDeposits(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:39 IST" name="urlLaunch" finished-at="2023-06-13T20:42:43 IST" duration-ms="4793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyBalanceShownInPaymentAccountsPageIsCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:43 IST" name="verifyBalanceShownInPaymentAccountsPageIsCorrect" data-provider="testcase25" finished-at="2023-06-13T20:42:57 IST" duration-ms="13993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FloodRelief]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[159159478]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[FloodRelief]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CheckNewProj]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[06/11/2023]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1900]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBalanceShownInPaymentAccountsPageIsCorrect -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:57 IST" name="tearDown" finished-at="2023-06-13T20:42:58 IST" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBalanceShownInPaymentAccountsPageIsCorrect status=SUCCESS method=PaymentAccountModule.verifyBalanceShownInPaymentAccountsPageIsCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:58 IST" name="urlLaunch" finished-at="2023-06-13T20:43:02 IST" duration-ms="4551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:02 IST" name="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown" data-provider="testCase30" finished-at="2023-06-13T20:43:13 IST" duration-ms="10810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Oberon]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Unique Close Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:13 IST" name="tearDown" finished-at="2023-06-13T20:43:13 IST" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown status=SUCCESS method=PaymentAccountModule.verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:13 IST" name="urlLaunch" finished-at="2023-06-13T20:43:18 IST" duration-ms="4528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToAddAccountSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:18 IST" name="verifyUserIsAbleToAddAccountSuccessfully" data-provider="testcase23" finished-at="2023-06-13T20:43:23 IST" duration-ms="5158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FC847]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[141574157]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToAddAccountSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:23 IST" name="tearDown" finished-at="2023-06-13T20:43:23 IST" duration-ms="139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToAddAccountSuccessfully status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:23 IST" name="urlLaunch" finished-at="2023-06-13T20:43:28 IST" duration-ms="4873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:28 IST" name="verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp" data-provider="testCase29" finished-at="2023-06-13T20:43:37 IST" duration-ms="8659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[174]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:37 IST" name="tearDown" finished-at="2023-06-13T20:43:37 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:37 IST" name="urlLaunch" finished-at="2023-06-13T20:43:44 IST" duration-ms="6858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToTransferFundSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:44 IST" name="verifyUserIsAbleToTransferFundSuccessfully" data-provider="testcase24" finished-at="2023-06-13T20:43:53 IST" duration-ms="9601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Trends]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Reliance]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[06/11/2023]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToTransferFundSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:53 IST" name="tearDown" finished-at="2023-06-13T20:43:53 IST" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToTransferFundSuccessfully status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToTransferFundSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:54 IST" name="urlLaunch" finished-at="2023-06-13T20:43:59 IST" duration-ms="4971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:59 IST" name="verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp" data-provider="testCase28" finished-at="2023-06-13T20:44:10 IST" duration-ms="11437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewJio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:44:10 IST" name="tearDown" finished-at="2023-06-13T20:44:10 IST" duration-ms="214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp status=SUCCESS method=PaymentAccountModule.verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qalegend.PaymentAccountModule -->
+      <class name="qalegend.UserManagementModule">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:37:46 IST" name="urlLaunch" finished-at="2023-06-13T20:37:51 IST" duration-ms="4706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyEditUserFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:37:51 IST" name="verifyEditUserFunction" data-provider="editUserCase" finished-at="2023-06-13T20:38:01 IST" duration-ms="10210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[raddy64321]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditUserFunction -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:01 IST" name="tearDown" finished-at="2023-06-13T20:38:01 IST" duration-ms="203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditUserFunction status=SUCCESS method=UserManagementModule.verifyEditUserFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:01 IST" name="urlLaunch" finished-at="2023-06-13T20:38:07 IST" duration-ms="5476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyInactiveUserCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:07 IST" name="verifyInactiveUserCase" data-provider="inactiveUser" finished-at="2023-06-13T20:38:21 IST" duration-ms="14402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[raddy64321]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[raddy64321]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInactiveUserCase -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:21 IST" name="tearDown" finished-at="2023-06-13T20:38:21 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInactiveUserCase status=SUCCESS method=UserManagementModule.verifyInactiveUserCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:21 IST" name="urlLaunch" finished-at="2023-06-13T20:38:25 IST" duration-ms="3387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:25 IST" name="verifySearchUserFunctionality" data-provider="searchUser" finished-at="2023-06-13T20:38:31 IST" duration-ms="6321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +591,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchUserFunctionality -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:14:56 IST" name="urlLaunch" finished-at="2023-06-13T20:16:08 IST" duration-ms="71900" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:31 IST" name="tearDown" finished-at="2023-06-13T20:38:31 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchUserFunctionality status=SUCCESS method=UserManagementModule.verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:31 IST" name="urlLaunch" finished-at="2023-06-13T20:38:38 IST" duration-ms="7054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +613,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:16:08 IST" name="verifyUserCreationWithValidData" data-provider="Userdata" finished-at="2023-06-13T20:16:20 IST" duration-ms="11754" status="PASS">
+        <test-method signature="verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:38 IST" name="verifyUserCreationWithValidData" data-provider="Userdata" finished-at="2023-06-13T20:38:49 IST" duration-ms="10756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +634,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCreationWithValidData -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:16:20 IST" name="urlLaunch" finished-at="2023-06-13T20:16:23 IST" duration-ms="3628" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:49 IST" name="tearDown" finished-at="2023-06-13T20:38:49 IST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCreationWithValidData status=SUCCESS method=UserManagementModule.verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:49 IST" name="urlLaunch" finished-at="2023-06-13T20:38:54 IST" duration-ms="4814" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +656,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:16:23 IST" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" data-provider="cancelDeleteUser" finished-at="2023-06-13T20:16:30 IST" duration-ms="6554" status="PASS">
+        <test-method signature="verifyUserDeletedOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:54 IST" name="verifyUserDeletedOnAcceptingConfirmationMessage" data-provider="acceptDeleteRequest" finished-at="2023-06-13T20:39:02 IST" duration-ms="7887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2283]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserDeletedOnAcceptingConfirmationMessage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:02 IST" name="tearDown" finished-at="2023-06-13T20:39:02 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserDeletedOnAcceptingConfirmationMessage status=SUCCESS method=UserManagementModule.verifyUserDeletedOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:02 IST" name="urlLaunch" finished-at="2023-06-13T20:39:08 IST" duration-ms="5984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:08 IST" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" data-provider="cancelDeleteUser" finished-at="2023-06-13T20:39:15 IST" duration-ms="6698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,7 +720,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserNotDeletedOnClickingCancelOfConfirmationMessage -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:16:30 IST" name="urlLaunch" finished-at="2023-06-13T20:16:44 IST" duration-ms="14239" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:15 IST" name="tearDown" finished-at="2023-06-13T20:39:15 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserNotDeletedOnClickingCancelOfConfirmationMessage status=SUCCESS method=UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:15 IST" name="urlLaunch" finished-at="2023-06-13T20:39:21 IST" duration-ms="5127" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,7 +742,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@7d61eb55]" started-at="2023-06-13T20:16:44 IST" name="verifyViewUserFunctionality" data-provider="viewUser" finished-at="2023-06-13T20:17:03 IST" duration-ms="19188" status="PASS">
+        <test-method signature="verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:21 IST" name="verifyViewUserFunctionality" data-provider="viewUser" finished-at="2023-06-13T20:39:29 IST" duration-ms="8246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,9 +763,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyViewUserFunctionality -->
-      </class> <!-- qalegend.UserManagementModule -->
-      <class name="qalegend.LoginTestCase">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" started-at="2023-06-13T20:14:28 IST" name="urlLaunch" finished-at="2023-06-13T20:14:35 IST" duration-ms="6890" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:29 IST" name="tearDown" finished-at="2023-06-13T20:39:29 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyViewUserFunctionality status=SUCCESS method=UserManagementModule.verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:29 IST" name="urlLaunch" finished-at="2023-06-13T20:39:34 IST" duration-ms="5006" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,7 +785,77 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" started-at="2023-06-13T20:14:35 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-13T20:14:37 IST" duration-ms="1586" status="PASS">
+        <test-method signature="verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:34 IST" name="verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage" data-provider="ExistingUserdata" finished-at="2023-06-13T20:39:43 IST" duration-ms="8600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Balasubramaniam]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[bala1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Specialist]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[bala123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Password@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:43 IST" name="tearDown" finished-at="2023-06-13T20:39:43 IST" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage status=SUCCESS method=UserManagementModule.verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qalegend.UserManagementModule -->
+      <class name="qalegend.LoginTestCase">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:25 IST" name="urlLaunch" finished-at="2023-06-13T20:37:33 IST" duration-ms="7898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:33 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-13T20:37:34 IST" duration-ms="1248" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,7 +871,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" started-at="2023-06-13T20:14:37 IST" name="urlLaunch" finished-at="2023-06-13T20:14:41 IST" duration-ms="4427" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:34 IST" name="tearDown" finished-at="2023-06-13T20:37:34 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:35 IST" name="urlLaunch" finished-at="2023-06-13T20:37:41 IST" duration-ms="6813" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,7 +893,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@202b0582]" started-at="2023-06-13T20:14:41 IST" name="verifyLoginWithValidUsernameAndValidPassword" data-provider="testdatavalid" finished-at="2023-06-13T20:14:44 IST" duration-ms="2901" status="PASS">
+        <test-method signature="verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:41 IST" name="verifyLoginWithValidUsernameAndValidPassword" data-provider="testdatavalid" finished-at="2023-06-13T20:37:46 IST" duration-ms="4199" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,9 +909,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:46 IST" name="tearDown" finished-at="2023-06-13T20:37:46 IST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndValidPassword status=SUCCESS method=LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- qalegend.LoginTestCase -->
-      <class name="qalegend.RoleModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" started-at="2023-06-13T20:17:03 IST" name="urlLaunch" finished-at="2023-06-13T20:17:08 IST" duration-ms="4420" status="PASS">
+      <class name="qalegend.TaxRateModule">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:43 IST" name="urlLaunch" finished-at="2023-06-13T20:39:47 IST" duration-ms="3982" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,7 +933,479 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" started-at="2023-06-13T20:17:08 IST" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" data-provider="testcase21" finished-at="2023-06-13T20:17:14 IST" duration-ms="5741" status="PASS">
+        <test-method signature="verifyTaxRateCreationOnEnteringValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:47 IST" name="verifyTaxRateCreationOnEnteringValidData" data-provider="taxRateCreation" finished-at="2023-06-13T20:39:53 IST" duration-ms="5774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[STFITax]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaxRateCreationOnEnteringValidData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:53 IST" name="tearDown" finished-at="2023-06-13T20:39:53 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaxRateCreationOnEnteringValidData status=SUCCESS method=TaxRateModule.verifyTaxRateCreationOnEnteringValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:53 IST" name="urlLaunch" finished-at="2023-06-13T20:39:59 IST" duration-ms="5659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyTaxRateUsedInTaxGroupCannotBeDeleted(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:59 IST" name="verifyTaxRateUsedInTaxGroupCannotBeDeleted" data-provider="testcase17" finished-at="2023-06-13T20:40:05 IST" duration-ms="6434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cgst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTaxRateUsedInTaxGroupCannotBeDeleted -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:05 IST" name="tearDown" finished-at="2023-06-13T20:40:05 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTaxRateUsedInTaxGroupCannotBeDeleted status=SUCCESS method=TaxRateModule.verifyTaxRateUsedInTaxGroupCannotBeDeleted(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:05 IST" name="urlLaunch" finished-at="2023-06-13T20:40:11 IST" duration-ms="6208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToAddTaxGroupSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:11 IST" name="verifyUserIsAbleToAddTaxGroupSuccessfully" data-provider="addTaxGroup" finished-at="2023-06-13T20:40:18 IST" duration-ms="6697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[floodeqtax]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sgst]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[cgst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToAddTaxGroupSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:18 IST" name="tearDown" finished-at="2023-06-13T20:40:18 IST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToAddTaxGroupSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToAddTaxGroupSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:19 IST" name="urlLaunch" finished-at="2023-06-13T20:40:23 IST" duration-ms="4659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToDeleteTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:23 IST" name="verifyUserIsAbleToDeleteTaxRateSuccessfully" data-provider="deleteTaxRate" finished-at="2023-06-13T20:40:29 IST" duration-ms="5832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[delete]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToDeleteTaxRateSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:29 IST" name="tearDown" finished-at="2023-06-13T20:40:29 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToDeleteTaxRateSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToDeleteTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:29 IST" name="urlLaunch" finished-at="2023-06-13T20:40:35 IST" duration-ms="5556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToEditTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:35 IST" name="verifyUserIsAbleToEditTaxRateSuccessfully" data-provider="editTaxRate" finished-at="2023-06-13T20:40:41 IST" duration-ms="6109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ValueAddedTax]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ValueAddedTaxEdit]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToEditTaxRateSuccessfully -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:41 IST" name="tearDown" finished-at="2023-06-13T20:40:41 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToEditTaxRateSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToEditTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:41 IST" name="urlLaunch" finished-at="2023-06-13T20:40:46 IST" duration-ms="4288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:46 IST" name="verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank" data-provider="invalidNameTaxRate" finished-at="2023-06-13T20:40:51 IST" duration-ms="5779" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:51 IST" name="tearDown" finished-at="2023-06-13T20:40:52 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank status=SUCCESS method=TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:52 IST" name="urlLaunch" finished-at="2023-06-13T20:40:57 IST" duration-ms="5690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:57 IST" name="verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank" data-provider="invalidTaxRate" finished-at="2023-06-13T20:41:03 IST" duration-ms="5667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[taxcheck]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:41:03 IST" name="tearDown" finished-at="2023-06-13T20:41:03 IST" duration-ms="178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank status=SUCCESS method=TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qalegend.TaxRateModule -->
+      <class name="qalegend.RoleModule">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:03 IST" name="urlLaunch" finished-at="2023-06-13T20:41:07 IST" duration-ms="4227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyAddRoleFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:07 IST" name="verifyAddRoleFunction" data-provider="testcase18" finished-at="2023-06-13T20:41:17 IST" duration-ms="9986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CMDROClub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddRoleFunction -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:17 IST" name="tearDown" finished-at="2023-06-13T20:41:18 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddRoleFunction status=SUCCESS method=RoleModule.verifyAddRoleFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:18 IST" name="urlLaunch" finished-at="2023-06-13T20:41:23 IST" duration-ms="4898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyEditRoleFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:23 IST" name="verifyEditRoleFunction" data-provider="testCase19" finished-at="2023-06-13T20:41:33 IST" duration-ms="10414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ProductionController]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ProductionControllerEdit]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditRoleFunction -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:33 IST" name="tearDown" finished-at="2023-06-13T20:41:33 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditRoleFunction status=SUCCESS method=RoleModule.verifyEditRoleFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:33 IST" name="urlLaunch" finished-at="2023-06-13T20:41:38 IST" duration-ms="4780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:38 IST" name="verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage" data-provider="testcase22" finished-at="2023-06-13T20:41:43 IST" duration-ms="5269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[QA testing 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:43 IST" name="tearDown" finished-at="2023-06-13T20:41:43 IST" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage status=SUCCESS method=RoleModule.verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:44 IST" name="urlLaunch" finished-at="2023-06-13T20:41:49 IST" duration-ms="5518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:49 IST" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" data-provider="testcase21" finished-at="2023-06-13T20:41:55 IST" duration-ms="5729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,7 +1426,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" started-at="2023-06-13T20:17:14 IST" name="urlLaunch" finished-at="2023-06-13T20:17:18 IST" duration-ms="4601" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:55 IST" name="tearDown" finished-at="2023-06-13T20:41:55 IST" duration-ms="134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled status=SUCCESS method=RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:55 IST" name="urlLaunch" finished-at="2023-06-13T20:42:01 IST" duration-ms="5984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -251,7 +1448,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@638ef7ed]" started-at="2023-06-13T20:17:18 IST" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" data-provider="testCase20" finished-at="2023-06-13T20:17:34 IST" duration-ms="15581" status="PASS">
+        <test-method signature="verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:42:01 IST" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" data-provider="testCase20" finished-at="2023-06-13T20:42:06 IST" duration-ms="5201" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,7 +1469,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidationMessageShownOnSearchingANonExistingRoleName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:42:06 IST" name="tearDown" finished-at="2023-06-13T20:42:06 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidationMessageShownOnSearchingANonExistingRoleName status=SUCCESS method=RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- qalegend.RoleModule -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- AutomationTests -->
+  </suite> <!-- demo -->
 </testng-results>

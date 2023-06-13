@@ -32,9 +32,6 @@ public class PageUtility {
 
 	public static void dropdown(WebElement element, String value,WebDriver driver) {
 		Select select = new Select(element);
-//		WaitFunction waitFor=new WaitFunction();
-//		waitFor.implicitWaitforElement(driver, 30);
-
 		select.selectByVisibleText(value);
 
 	}

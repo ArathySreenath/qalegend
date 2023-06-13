@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AutomationTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>30/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 11 19:35:39 IST 2023</td>
+<td>Started on:</td><td>Tue Jun 13 19:46:31 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13338 ms)</td>
+<tr><td>Total time:</td><td>425 seconds (425190 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,94 +76,155 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully()'><b>verifyUserIsAbleToAddAccountSuccessfully</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 12345, FirstCry1000, 141574157, 5000</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt; is not clickable at point (115, 468). Other element would receive the click: &lt;div class=&quot;tour-backdrop bottom&quot; style=&quot;top: -2.44141e-05px; left: 0px; height: 1561px; width: 1530px;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=114.0.5735.110)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cee28e0109db864aa4840f7f5a34b4ef, clickElement {id=BB7873701070F93C246D76D7E0C3E0AD_element_55}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52883/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (cee28e0109db864aa4840f7f5a34b4ef)] -&gt; link text: Payment Accounts]
-Session ID: cee28e0109db864aa4840f7f5a34b4ef
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at qalegend.utils.PageUtility.clickFunction(PageUtility.java:22)
-	at pages.DashboardPage.navigateToAccounts(DashboardPage.java:82)
-	at qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(PaymentAccountModule.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1214284410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1214284410'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt; is not clickable at point (115, 468). Other element would receive the click: &lt;div class=&quot;tour-backdrop bottom&quot; style=&quot;top: -2.44141e-05px; left: 0px; height: 1561px; width: 1530px;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=114.0.5735.110)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cee28e0109db864aa4840f7f5a34b4ef, clickElement {id=BB7873701070F93C246D76D7E0C3E0AD_element_55}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\arath\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52883}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52883/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (cee28e0109db864aa4840f7f5a34b4ef)] -&gt; link text: Payment Accounts]
-Session ID: cee28e0109db864aa4840f7f5a34b4ef
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at qalegend.utils.PageUtility.clickFunction(PageUtility.java:22)
-	at pages.DashboardPage.navigateToAccounts(DashboardPage.java:82)
-	at qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(PaymentAccountModule.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>4</td>
-<td>qalegend.PaymentAccountModule@49c90a9c</td></tr>
+<td title='qalegend.LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword()'><b>verifyLoginWithValidUsernameAndInvalidPassword</b><br>Test class: qalegend.LoginTestCase<br>Parameters: admin, 111</td>
+<td></td>
+<td>1</td>
+<td>qalegend.LoginTestCase@1cf6d1be</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown()'><b>verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, Oberon, Unique Close Account</td>
+<td></td>
+<td>10</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.RoleModule.verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage()'><b>verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage</b><br>Test class: qalegend.RoleModule<br>Parameters: admin, 123123, procurement</td>
+<td></td>
+<td>6</td>
+<td>qalegend.RoleModule@34129c78</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage()'><b>verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, Balasubramaniam, bala1234@gmail.com, Specialist, bala123, Password@123, Password@123</td>
+<td></td>
+<td>8</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyUserIsAbleToAddTaxGroupSuccessfully()'><b>verifyUserIsAbleToAddTaxGroupSuccessfully</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, taxRateNewindia1100, sgst, cgst</td>
+<td></td>
+<td>6</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyEditUserFunction()'><b>verifyEditUserFunction</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, raddy64321, 14</td>
+<td></td>
+<td>10</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyUserIsAbleToDeleteTaxRateSuccessfully()'><b>verifyUserIsAbleToDeleteTaxRateSuccessfully</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, delete</td>
+<td></td>
+<td>6</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.RoleModule.verifyAddRoleFunction()'><b>verifyAddRoleFunction</b><br>Test class: qalegend.RoleModule<br>Parameters: admin, 123123, CMDClub</td>
+<td></td>
+<td>10</td>
+<td>qalegend.RoleModule@34129c78</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyViewUserFunctionality()'><b>verifyViewUserFunctionality</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, raddy64321</td>
+<td></td>
+<td>8</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp()'><b>verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, NewJio</td>
+<td></td>
+<td>11</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.RoleModule.verifyEditRoleFunction()'><b>verifyEditRoleFunction</b><br>Test class: qalegend.RoleModule<br>Parameters: admin, 123123, ProductionControllerEdit, ProductionController</td>
+<td></td>
+<td>11</td>
+<td>qalegend.RoleModule@34129c78</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyBalanceShownInPaymentAccountsPageIsCorrect()'><b>verifyBalanceShownInPaymentAccountsPageIsCorrect</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, WidowReMarriage, 159159478, 2000, WidowReMarriage, CheckNewProj, 100, 06/11/2023, 1900</td>
+<td></td>
+<td>14</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank()'><b>verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, , 11</td>
+<td></td>
+<td>5</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyTaxRateCreationOnEnteringValidData()'><b>verifyTaxRateCreationOnEnteringValidData</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, RegimeTaxIndianew, 11</td>
+<td></td>
+<td>5</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyTaxRateUsedInTaxGroupCannotBeDeleted()'><b>verifyTaxRateUsedInTaxGroupCannotBeDeleted</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, cgst</td>
+<td></td>
+<td>6</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully()'><b>verifyUserIsAbleToAddAccountSuccessfully</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, FirstCry2000, 141574157, 5000</td>
+<td></td>
+<td>6</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp()'><b>verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, 173</td>
+<td></td>
+<td>8</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyUserDeletedOnAcceptingConfirmationMessage()'><b>verifyUserDeletedOnAcceptingConfirmationMessage</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, 2282</td>
+<td></td>
+<td>7</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.LoginTestCase.verifyLoginWithValidUsernameAndValidPassword()'><b>verifyLoginWithValidUsernameAndValidPassword</b><br>Test class: qalegend.LoginTestCase<br>Parameters: admin, 123123</td>
+<td></td>
+<td>2</td>
+<td>qalegend.LoginTestCase@1cf6d1be</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyUserIsAbleToEditTaxRateSuccessfully()'><b>verifyUserIsAbleToEditTaxRateSuccessfully</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, ValueAddedTaxEdit, ValueAddedTax, 33</td>
+<td></td>
+<td>6</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled()'><b>verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled</b><br>Test class: qalegend.RoleModule<br>Parameters: admin, 123123, manager</td>
+<td></td>
+<td>5</td>
+<td>qalegend.RoleModule@34129c78</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyUserCreationWithValidData()'><b>verifyUserCreationWithValidData</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, Specialist</td>
+<td></td>
+<td>11</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyAccountCanBeEditedSuccessfully()'><b>verifyAccountCanBeEditedSuccessfully</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, 195, 195edit</td>
+<td></td>
+<td>8</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage()'><b>verifyUserNotDeletedOnClickingCancelOfConfirmationMessage</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, george8894</td>
+<td></td>
+<td>8</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyBalanceIncreasesWithDeposits()'><b>verifyBalanceIncreasesWithDeposits</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, depositcheck, 100, transfercheck, 04/04/2023, 3100</td>
+<td></td>
+<td>12</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank()'><b>verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank</b><br>Test class: qalegend.TaxRateModule<br>Parameters: admin, 123123, taxcheck, </td>
+<td></td>
+<td>5</td>
+<td>qalegend.TaxRateModule@53f3bdbd</td></tr>
+<tr>
+<td title='qalegend.PaymentAccountModule.verifyUserIsAbleToTransferFundSuccessfully()'><b>verifyUserIsAbleToTransferFundSuccessfully</b><br>Test class: qalegend.PaymentAccountModule<br>Parameters: admin, 123123, Trends, Reliance, 100, 06/11/2023</td>
+<td></td>
+<td>9</td>
+<td>qalegend.PaymentAccountModule@7d61eb55</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifySearchUserFunctionality()'><b>verifySearchUserFunctionality</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, Zana123</td>
+<td></td>
+<td>6</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
+<tr>
+<td title='qalegend.RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName()'><b>verifyValidationMessageShownOnSearchingANonExistingRoleName</b><br>Test class: qalegend.RoleModule<br>Parameters: admin, 123123, zzzzzzzzzzzzzzz</td>
+<td></td>
+<td>5</td>
+<td>qalegend.RoleModule@34129c78</td></tr>
+<tr>
+<td title='qalegend.UserManagementModule.verifyInactiveUserCase()'><b>verifyInactiveUserCase</b><br>Test class: qalegend.UserManagementModule<br>Parameters: admin, 123123, raddy64321, raddy64321, Password@123</td>
+<td></td>
+<td>15</td>
+<td>qalegend.UserManagementModule@4149c063</td></tr>
 </table><p>
 </body>
 </html>

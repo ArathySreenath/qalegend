@@ -5,14 +5,13 @@
 	<listeners>
 		<listener class-name="qalegend.utils.Listener" />
 		<listener class-name="reports.ExtentReport" />
-		<listener class-name="retryAnalyser.Retry"/>
 		<listener class-name="qalegend.utils.RetryListener"/>
 	</listeners>
 	<test name="Test">
 		<classes>
 			<class name="qalegend.LoginTestCase">
 				<methods>
-					<include name="verifyLoginWithValidUsernameAndValidPassword" />
+					<include name="verifyLoginWithValidUsernameAndInvalidPassword" />
 				</methods>
 			</class>
 		</classes>

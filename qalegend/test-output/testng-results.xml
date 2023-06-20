@@ -1,861 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="30" passed="30" failed="0" skipped="0">
+<testng-results retried="3" ignored="1" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-13T20:37:24 IST" name="demo" finished-at="2023-06-13T20:44:10 IST" duration-ms="406314">
+  <suite started-at="2023-06-20T08:20:29 IST" name="Suite" finished-at="2023-06-20T08:22:36 IST" duration-ms="126879">
     <groups>
-      <group name="regression">
-        <method signature="UserManagementModule.verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifySearchUserFunctionality" class="qalegend.UserManagementModule"/>
-        <method signature="UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" class="qalegend.UserManagementModule"/>
-        <method signature="UserManagementModule.verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyViewUserFunctionality" class="qalegend.UserManagementModule"/>
-      </group> <!-- regression -->
-      <group name="smokeTest">
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" class="qalegend.RoleModule"/>
-        <method signature="RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" class="qalegend.RoleModule"/>
-      </group> <!-- smokeTest -->
-      <group name="sanityTest">
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndInvalidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" name="verifyLoginWithValidUsernameAndValidPassword" class="qalegend.LoginTestCase"/>
-        <method signature="UserManagementModule.verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" name="verifyUserCreationWithValidData" class="qalegend.UserManagementModule"/>
-      </group> <!-- sanityTest -->
     </groups>
-    <test started-at="2023-06-13T20:37:24 IST" name="AutomationTests" finished-at="2023-06-13T20:44:10 IST" duration-ms="406314">
-      <class name="qalegend.PaymentAccountModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:06 IST" name="urlLaunch" finished-at="2023-06-13T20:42:12 IST" duration-ms="5177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyAccountCanBeEditedSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:12 IST" name="verifyAccountCanBeEditedSuccessfully" data-provider="testCase27" finished-at="2023-06-13T20:42:20 IST" duration-ms="8796" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[195edit]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[195]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAccountCanBeEditedSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:20 IST" name="tearDown" finished-at="2023-06-13T20:42:21 IST" duration-ms="231" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAccountCanBeEditedSuccessfully status=SUCCESS method=PaymentAccountModule.verifyAccountCanBeEditedSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:21 IST" name="urlLaunch" finished-at="2023-06-13T20:42:26 IST" duration-ms="5339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyBalanceIncreasesWithDeposits(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:26 IST" name="verifyBalanceIncreasesWithDeposits" data-provider="testCase26" finished-at="2023-06-13T20:42:38 IST" duration-ms="12341" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[depositcheck]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[transfercheck]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[04/04/2023]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[3200]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBalanceIncreasesWithDeposits -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:38 IST" name="tearDown" finished-at="2023-06-13T20:42:39 IST" duration-ms="209" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyBalanceIncreasesWithDeposits status=SUCCESS method=PaymentAccountModule.verifyBalanceIncreasesWithDeposits(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:39 IST" name="urlLaunch" finished-at="2023-06-13T20:42:43 IST" duration-ms="4793" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyBalanceShownInPaymentAccountsPageIsCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:43 IST" name="verifyBalanceShownInPaymentAccountsPageIsCorrect" data-provider="testcase25" finished-at="2023-06-13T20:42:57 IST" duration-ms="13993" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[FloodRelief]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[159159478]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[2000]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[FloodRelief]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[CheckNewProj]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[06/11/2023]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[1900]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyBalanceShownInPaymentAccountsPageIsCorrect -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:57 IST" name="tearDown" finished-at="2023-06-13T20:42:58 IST" duration-ms="181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyBalanceShownInPaymentAccountsPageIsCorrect status=SUCCESS method=PaymentAccountModule.verifyBalanceShownInPaymentAccountsPageIsCorrect(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:42:58 IST" name="urlLaunch" finished-at="2023-06-13T20:43:02 IST" duration-ms="4551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:02 IST" name="verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown" data-provider="testCase30" finished-at="2023-06-13T20:43:13 IST" duration-ms="10810" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Oberon]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Unique Close Account]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:13 IST" name="tearDown" finished-at="2023-06-13T20:43:13 IST" duration-ms="127" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown status=SUCCESS method=PaymentAccountModule.verifyClosedAccountsAreNotDisplayedForFundTransferTOAccountDropdown(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:13 IST" name="urlLaunch" finished-at="2023-06-13T20:43:18 IST" duration-ms="4528" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToAddAccountSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:18 IST" name="verifyUserIsAbleToAddAccountSuccessfully" data-provider="testcase23" finished-at="2023-06-13T20:43:23 IST" duration-ms="5158" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[FC847]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[141574157]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[5000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToAddAccountSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:23 IST" name="tearDown" finished-at="2023-06-13T20:43:23 IST" duration-ms="139" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToAddAccountSuccessfully status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToAddAccountSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:23 IST" name="urlLaunch" finished-at="2023-06-13T20:43:28 IST" duration-ms="4873" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:28 IST" name="verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp" data-provider="testCase29" finished-at="2023-06-13T20:43:37 IST" duration-ms="8659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[174]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:37 IST" name="tearDown" finished-at="2023-06-13T20:43:37 IST" duration-ms="192" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToCloseAccountOnAcceptingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:37 IST" name="urlLaunch" finished-at="2023-06-13T20:43:44 IST" duration-ms="6858" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToTransferFundSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:44 IST" name="verifyUserIsAbleToTransferFundSuccessfully" data-provider="testcase24" finished-at="2023-06-13T20:43:53 IST" duration-ms="9601" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Trends]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Reliance]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[06/11/2023]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToTransferFundSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:53 IST" name="tearDown" finished-at="2023-06-13T20:43:53 IST" duration-ms="196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToTransferFundSuccessfully status=SUCCESS method=PaymentAccountModule.verifyUserIsAbleToTransferFundSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:54 IST" name="urlLaunch" finished-at="2023-06-13T20:43:59 IST" duration-ms="4971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:43:59 IST" name="verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp" data-provider="testCase28" finished-at="2023-06-13T20:44:10 IST" duration-ms="11437" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[NewJio]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55]" started-at="2023-06-13T20:44:10 IST" name="tearDown" finished-at="2023-06-13T20:44:10 IST" duration-ms="214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp status=SUCCESS method=PaymentAccountModule.verifyUserIsNotAbleToCloseAccountOnCancellingConfirmationPopUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.PaymentAccountModule@7d61eb55] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qalegend.PaymentAccountModule -->
-      <class name="qalegend.UserManagementModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:37:46 IST" name="urlLaunch" finished-at="2023-06-13T20:37:51 IST" duration-ms="4706" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyEditUserFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:37:51 IST" name="verifyEditUserFunction" data-provider="editUserCase" finished-at="2023-06-13T20:38:01 IST" duration-ms="10210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[raddy64321]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[14]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditUserFunction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:01 IST" name="tearDown" finished-at="2023-06-13T20:38:01 IST" duration-ms="203" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditUserFunction status=SUCCESS method=UserManagementModule.verifyEditUserFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:01 IST" name="urlLaunch" finished-at="2023-06-13T20:38:07 IST" duration-ms="5476" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyInactiveUserCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:07 IST" name="verifyInactiveUserCase" data-provider="inactiveUser" finished-at="2023-06-13T20:38:21 IST" duration-ms="14402" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[raddy64321]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[raddy64321]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInactiveUserCase -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:21 IST" name="tearDown" finished-at="2023-06-13T20:38:21 IST" duration-ms="200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInactiveUserCase status=SUCCESS method=UserManagementModule.verifyInactiveUserCase(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:21 IST" name="urlLaunch" finished-at="2023-06-13T20:38:25 IST" duration-ms="3387" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:25 IST" name="verifySearchUserFunctionality" data-provider="searchUser" finished-at="2023-06-13T20:38:31 IST" duration-ms="6321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Zana123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchUserFunctionality -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:31 IST" name="tearDown" finished-at="2023-06-13T20:38:31 IST" duration-ms="191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchUserFunctionality status=SUCCESS method=UserManagementModule.verifySearchUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:31 IST" name="urlLaunch" finished-at="2023-06-13T20:38:38 IST" duration-ms="7054" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:38 IST" name="verifyUserCreationWithValidData" data-provider="Userdata" finished-at="2023-06-13T20:38:49 IST" duration-ms="10756" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Specialist]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCreationWithValidData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:49 IST" name="tearDown" finished-at="2023-06-13T20:38:49 IST" duration-ms="135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserCreationWithValidData status=SUCCESS method=UserManagementModule.verifyUserCreationWithValidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:49 IST" name="urlLaunch" finished-at="2023-06-13T20:38:54 IST" duration-ms="4814" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserDeletedOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:38:54 IST" name="verifyUserDeletedOnAcceptingConfirmationMessage" data-provider="acceptDeleteRequest" finished-at="2023-06-13T20:39:02 IST" duration-ms="7887" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2283]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserDeletedOnAcceptingConfirmationMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:02 IST" name="tearDown" finished-at="2023-06-13T20:39:02 IST" duration-ms="182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserDeletedOnAcceptingConfirmationMessage status=SUCCESS method=UserManagementModule.verifyUserDeletedOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:02 IST" name="urlLaunch" finished-at="2023-06-13T20:39:08 IST" duration-ms="5984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:08 IST" name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" data-provider="cancelDeleteUser" finished-at="2023-06-13T20:39:15 IST" duration-ms="6698" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[george8894]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserNotDeletedOnClickingCancelOfConfirmationMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:15 IST" name="tearDown" finished-at="2023-06-13T20:39:15 IST" duration-ms="182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserNotDeletedOnClickingCancelOfConfirmationMessage status=SUCCESS method=UserManagementModule.verifyUserNotDeletedOnClickingCancelOfConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:15 IST" name="urlLaunch" finished-at="2023-06-13T20:39:21 IST" duration-ms="5127" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:21 IST" name="verifyViewUserFunctionality" data-provider="viewUser" finished-at="2023-06-13T20:39:29 IST" duration-ms="8246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[raddy64321]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyViewUserFunctionality -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:29 IST" name="tearDown" finished-at="2023-06-13T20:39:29 IST" duration-ms="182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyViewUserFunctionality status=SUCCESS method=UserManagementModule.verifyViewUserFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:29 IST" name="urlLaunch" finished-at="2023-06-13T20:39:34 IST" duration-ms="5006" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:34 IST" name="verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage" data-provider="ExistingUserdata" finished-at="2023-06-13T20:39:43 IST" duration-ms="8600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Balasubramaniam]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[bala1234@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Specialist]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[bala123]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Password@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.UserManagementModule@4149c063]" started-at="2023-06-13T20:39:43 IST" name="tearDown" finished-at="2023-06-13T20:39:43 IST" duration-ms="144" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage status=SUCCESS method=UserManagementModule.verifyErrorMessageOnEnteringExistingUsernameInUserCreationPage(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:qalegend.UserManagementModule@4149c063] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qalegend.UserManagementModule -->
+    <test started-at="2023-06-20T08:20:29 IST" name="Test" finished-at="2023-06-20T08:22:36 IST" duration-ms="126879">
       <class name="qalegend.LoginTestCase">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:25 IST" name="urlLaunch" finished-at="2023-06-13T20:37:33 IST" duration-ms="7898" status="PASS">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:20:30 IST" name="urlLaunch" finished-at="2023-06-20T08:20:38 IST" duration-ms="8100" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:33 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-13T20:37:34 IST" duration-ms="1248" status="PASS">
+        <test-method retried="true" signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:20:38 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-20T08:21:11 IST" duration-ms="33047" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -864,36 +27,109 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[111]]>
+                <![CDATA[123123]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: MicrosoftEdge=114.0.1823.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [406bcae8bd2d2310de14bcd6bbbfbe9f, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52777}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52777/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 406bcae8bd2d2310de14bcd6bbbfbe9f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: MicrosoftEdge=114.0.1823.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [406bcae8bd2d2310de14bcd6bbbfbe9f, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52777}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52777/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 406bcae8bd2d2310de14bcd6bbbfbe9f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at pages.LoginPage.invalidLogin(LoginPage.java:35)
+at qalegend.LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(LoginTestCase.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:34 IST" name="tearDown" finished-at="2023-06-13T20:37:34 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:11 IST" name="tearDown" finished-at="2023-06-20T08:21:11 IST" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndInvalidPassword status=SKIP method=LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:35 IST" name="urlLaunch" finished-at="2023-06-13T20:37:41 IST" duration-ms="6813" status="PASS">
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:11 IST" name="urlLaunch" finished-at="2023-06-20T08:21:18 IST" duration-ms="6561" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:41 IST" name="verifyLoginWithValidUsernameAndValidPassword" data-provider="testdatavalid" finished-at="2023-06-13T20:37:46 IST" duration-ms="4199" status="PASS">
+        <test-method retried="true" signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:18 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-20T08:21:51 IST" duration-ms="32643" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -906,581 +142,344 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: MicrosoftEdge=114.0.1823.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b2170deddb5f3f563d847e21e64c9942, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52825}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52825/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2170deddb5f3f563d847e21e64c9942]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: MicrosoftEdge=114.0.1823.51)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b2170deddb5f3f563d847e21e64c9942, findElement {using=id, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52825}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52825/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2170deddb5f3f563d847e21e64c9942
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at pages.LoginPage.invalidLogin(LoginPage.java:35)
+at qalegend.LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(LoginTestCase.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be]" started-at="2023-06-13T20:37:46 IST" name="tearDown" finished-at="2023-06-13T20:37:46 IST" duration-ms="178" status="PASS">
+        </test-method> <!-- verifyLoginWithValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:51 IST" name="tearDown" finished-at="2023-06-20T08:21:51 IST" duration-ms="144" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndValidPassword status=SUCCESS method=LoginTestCase.verifyLoginWithValidUsernameAndValidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@1cf6d1be] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndInvalidPassword status=SKIP method=LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:51 IST" name="urlLaunch" finished-at="2023-06-20T08:21:56 IST" duration-ms="5110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method retried="true" signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:21:56 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-20T08:22:11 IST" duration-ms="14944" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.id: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at pages.LoginPage.invalidLogin(LoginPage.java:35)
+at qalegend.LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(LoginTestCase.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:22:11 IST" name="tearDown" finished-at="2023-06-20T08:22:11 IST" duration-ms="63" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidUsernameAndInvalidPassword status=SKIP method=LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=114.0.1823.51)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [637019ab4b821bf7fe31af2135e59e0e, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52869}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52869/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 637019ab4b821bf7fe31af2135e59e0e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=114.0.1823.51)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [637019ab4b821bf7fe31af2135e59e0e, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.51, ms:edgeOptions: {debuggerAddress: localhost:52869}, msedge: {msedgedriverVersion: 113.0.1770.0 (981cefe572a7c..., userDataDir: C:\Users\arath\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52869/devtoo..., se:cdpVersion: 114.0.1823.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 637019ab4b821bf7fe31af2135e59e0e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+at common.functions.BrowserLaunch.tearDown(BrowserLaunch.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:22:11 IST" name="urlLaunch" finished-at="2023-06-20T08:22:17 IST" duration-ms="5842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlLaunch -->
+        <test-method signature="verifyLoginWithValidUsernameAndInvalidPassword(java.lang.String,java.lang.String)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:22:17 IST" name="verifyLoginWithValidUsernameAndInvalidPassword" data-provider="testCase1" finished-at="2023-06-20T08:22:36 IST" duration-ms="18948" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with locator By.id: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: username
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at pages.LoginPage.invalidLogin(LoginPage.java:35)
+at qalegend.LoginTestCase.verifyLoginWithValidUsernameAndInvalidPassword(LoginTestCase.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.LoginTestCase@69e153c5]" started-at="2023-06-20T08:22:36 IST" name="tearDown" finished-at="2023-06-20T08:22:36 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- qalegend.LoginTestCase -->
-      <class name="qalegend.TaxRateModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:43 IST" name="urlLaunch" finished-at="2023-06-13T20:39:47 IST" duration-ms="3982" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyTaxRateCreationOnEnteringValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:47 IST" name="verifyTaxRateCreationOnEnteringValidData" data-provider="taxRateCreation" finished-at="2023-06-13T20:39:53 IST" duration-ms="5774" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[STFITax]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaxRateCreationOnEnteringValidData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:53 IST" name="tearDown" finished-at="2023-06-13T20:39:53 IST" duration-ms="174" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTaxRateCreationOnEnteringValidData status=SUCCESS method=TaxRateModule.verifyTaxRateCreationOnEnteringValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:53 IST" name="urlLaunch" finished-at="2023-06-13T20:39:59 IST" duration-ms="5659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyTaxRateUsedInTaxGroupCannotBeDeleted(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:39:59 IST" name="verifyTaxRateUsedInTaxGroupCannotBeDeleted" data-provider="testcase17" finished-at="2023-06-13T20:40:05 IST" duration-ms="6434" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[cgst]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTaxRateUsedInTaxGroupCannotBeDeleted -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:05 IST" name="tearDown" finished-at="2023-06-13T20:40:05 IST" duration-ms="200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTaxRateUsedInTaxGroupCannotBeDeleted status=SUCCESS method=TaxRateModule.verifyTaxRateUsedInTaxGroupCannotBeDeleted(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:05 IST" name="urlLaunch" finished-at="2023-06-13T20:40:11 IST" duration-ms="6208" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToAddTaxGroupSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:11 IST" name="verifyUserIsAbleToAddTaxGroupSuccessfully" data-provider="addTaxGroup" finished-at="2023-06-13T20:40:18 IST" duration-ms="6697" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[floodeqtax]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sgst]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[cgst]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToAddTaxGroupSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:18 IST" name="tearDown" finished-at="2023-06-13T20:40:18 IST" duration-ms="277" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToAddTaxGroupSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToAddTaxGroupSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:19 IST" name="urlLaunch" finished-at="2023-06-13T20:40:23 IST" duration-ms="4659" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToDeleteTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:23 IST" name="verifyUserIsAbleToDeleteTaxRateSuccessfully" data-provider="deleteTaxRate" finished-at="2023-06-13T20:40:29 IST" duration-ms="5832" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[delete]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToDeleteTaxRateSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:29 IST" name="tearDown" finished-at="2023-06-13T20:40:29 IST" duration-ms="183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToDeleteTaxRateSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToDeleteTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:29 IST" name="urlLaunch" finished-at="2023-06-13T20:40:35 IST" duration-ms="5556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToEditTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:35 IST" name="verifyUserIsAbleToEditTaxRateSuccessfully" data-provider="editTaxRate" finished-at="2023-06-13T20:40:41 IST" duration-ms="6109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ValueAddedTax]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[ValueAddedTaxEdit]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[33]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToEditTaxRateSuccessfully -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:41 IST" name="tearDown" finished-at="2023-06-13T20:40:41 IST" duration-ms="177" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToEditTaxRateSuccessfully status=SUCCESS method=TaxRateModule.verifyUserIsAbleToEditTaxRateSuccessfully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:41 IST" name="urlLaunch" finished-at="2023-06-13T20:40:46 IST" duration-ms="4288" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:46 IST" name="verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank" data-provider="invalidNameTaxRate" finished-at="2023-06-13T20:40:51 IST" duration-ms="5779" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:51 IST" name="tearDown" finished-at="2023-06-13T20:40:52 IST" duration-ms="187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank status=SUCCESS method=TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingNameFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:52 IST" name="urlLaunch" finished-at="2023-06-13T20:40:57 IST" duration-ms="5690" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:40:57 IST" name="verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank" data-provider="invalidTaxRate" finished-at="2023-06-13T20:41:03 IST" duration-ms="5667" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[taxcheck]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd]" started-at="2023-06-13T20:41:03 IST" name="tearDown" finished-at="2023-06-13T20:41:03 IST" duration-ms="178" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank status=SUCCESS method=TaxRateModule.verifyUserIsUnableToAddTaxRateOnLeavingTaxRateFieldBlank(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.TaxRateModule@53f3bdbd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qalegend.TaxRateModule -->
-      <class name="qalegend.RoleModule">
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:03 IST" name="urlLaunch" finished-at="2023-06-13T20:41:07 IST" duration-ms="4227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyAddRoleFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:07 IST" name="verifyAddRoleFunction" data-provider="testcase18" finished-at="2023-06-13T20:41:17 IST" duration-ms="9986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[CMDROClub]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddRoleFunction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:17 IST" name="tearDown" finished-at="2023-06-13T20:41:18 IST" duration-ms="182" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddRoleFunction status=SUCCESS method=RoleModule.verifyAddRoleFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:18 IST" name="urlLaunch" finished-at="2023-06-13T20:41:23 IST" duration-ms="4898" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyEditRoleFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:23 IST" name="verifyEditRoleFunction" data-provider="testCase19" finished-at="2023-06-13T20:41:33 IST" duration-ms="10414" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ProductionController]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[ProductionControllerEdit]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditRoleFunction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:33 IST" name="tearDown" finished-at="2023-06-13T20:41:33 IST" duration-ms="191" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditRoleFunction status=SUCCESS method=RoleModule.verifyEditRoleFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:33 IST" name="urlLaunch" finished-at="2023-06-13T20:41:38 IST" duration-ms="4780" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:38 IST" name="verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage" data-provider="testcase22" finished-at="2023-06-13T20:41:43 IST" duration-ms="5269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[QA testing 3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:43 IST" name="tearDown" finished-at="2023-06-13T20:41:43 IST" duration-ms="172" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage status=SUCCESS method=RoleModule.verifyUserIsAbleToDeleteRoleOnAcceptingConfirmationMessage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:44 IST" name="urlLaunch" finished-at="2023-06-13T20:41:49 IST" duration-ms="5518" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:49 IST" name="verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled" data-provider="testcase21" finished-at="2023-06-13T20:41:55 IST" duration-ms="5729" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[manager]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:55 IST" name="tearDown" finished-at="2023-06-13T20:41:55 IST" duration-ms="134" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled status=SUCCESS method=RoleModule.verifyUserIsNotAbleToDeleteRoleIfConfirmationMessageIsCancelled(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="urlLaunch(java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:41:55 IST" name="urlLaunch" finished-at="2023-06-13T20:42:01 IST" duration-ms="5984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlLaunch -->
-        <test-method signature="verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:42:01 IST" name="verifyValidationMessageShownOnSearchingANonExistingRoleName" data-provider="testCase20" finished-at="2023-06-13T20:42:06 IST" duration-ms="5201" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[zzzzzzzzzzzzzzz]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidationMessageShownOnSearchingANonExistingRoleName -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:qalegend.RoleModule@34129c78]" started-at="2023-06-13T20:42:06 IST" name="tearDown" finished-at="2023-06-13T20:42:06 IST" duration-ms="186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyValidationMessageShownOnSearchingANonExistingRoleName status=SUCCESS method=RoleModule.verifyValidationMessageShownOnSearchingANonExistingRoleName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:qalegend.RoleModule@34129c78] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qalegend.RoleModule -->
-    </test> <!-- AutomationTests -->
-  </suite> <!-- demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

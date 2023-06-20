@@ -6,7 +6,11 @@
 			<class name="qalegend.LoginTestCase">
 				<methods>
 						<include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
-						<include name="verifyLoginWithValidUsernameAndValidPassword"/>
+				</methods>
+			</class>
+			<class name="qalegend.UserManagementModule">
+				<methods>
+					<include name="verifyViewUserFunctionality"/>
 				</methods>
 			</class>
 		</classes>

@@ -4,7 +4,8 @@
 	<test name="testdemo" parallel="classes" thread-count="2">
 		<classes>
 				
-			<class name="qalegend.RoleModule"/>
+			<class name="qalegend.AddExpensesTestCase"/>
+			<class name="qalegend.LoginTestCase"/>
 
 		</classes>
 	</test>

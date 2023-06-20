@@ -4,13 +4,13 @@
   <parameter name="browserName" value="chrome"/>
   <test thread-count="5" name="AutomationTests(failed)">
     <classes>
-      <class name="qalegend.UserManagementModule">
+      <class name="qalegend.TaxRateModule">
         <methods>
-          <include name="verifyUserNotDeletedOnClickingCancelOfConfirmationMessage" invocation-numbers="0"/>
+          <include name="verifyUserIsAbleToAddTaxGroupSuccessfully" invocation-numbers="0"/>
           <include name="urlLaunch"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- qalegend.UserManagementModule -->
+      </class> <!-- qalegend.TaxRateModule -->
     </classes>
   </test> <!-- AutomationTests(failed) -->
 </suite> <!-- Failed suite [demo] -->

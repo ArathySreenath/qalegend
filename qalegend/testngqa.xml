@@ -4,13 +4,16 @@
 	
 	<test name="AutomationTests">
 		<classes>
-		 <class name="qalegend.LoginTestCase"/>
-		 <class name="qalegend.UserManagementModule"/>
+		 
 		 <class name="qalegend.TaxRateModule"/>
 		 <class name="qalegend.RoleModule"/>
 		 <class name="qalegend.PaymentAccountModule"/>
 		 <class name="qalegend.AddExpensesTestCase"/>
+		 <class name="qalegend.LoginTestCase"/>
+		 <class name="qalegend.UserManagementModule"/>
 
+			
+		 
 				
 				
             

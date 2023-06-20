@@ -80,8 +80,7 @@ public class UserManagementModule extends BrowserLaunch {
 		dashboard.navigateToUserPage();
 		user.searchUser(searchValue);
 		user.viewUser();
-		Boolean viewPage = user.getViewUser().isDisplayed();
-		check.assertTrue(viewPage);
+		check.assertTrue(user.getViewUser());
 		check.assertAll();
 	}
 

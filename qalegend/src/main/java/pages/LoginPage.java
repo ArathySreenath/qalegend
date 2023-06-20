@@ -16,26 +16,25 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
-	@FindBy(id="username")
-	WebElement user;
-	@FindBy(id="password")
-	WebElement password;
-	@FindBy(css="button[type='submit']")
-	WebElement submit;
-	
-	public void doLogin(String uname,String pwd) {
+
+	@FindBy(id = "username")
+	private WebElement user;
+	@FindBy(id = "password")
+	private WebElement password;
+	@FindBy(css = "button[type='submit']")
+	private WebElement submit;
+
+	public void doLogin(String uname, String pwd) {
 		PageUtility.enterText(user, uname);
 		PageUtility.enterText(password, pwd);
 		submit.click();
-		
-		
-	}
-	public boolean invalidLogin() {
-	boolean userNameDisplay=user.isDisplayed();
-	return userNameDisplay;
-	
-	}
-	
-		
+
 	}
 
+	public boolean invalidLogin() {
+		boolean userNameDisplay = user.isDisplayed();
+		return userNameDisplay;
+
+	}
+
+}

@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -9,7 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import qalegend.utils.PageUtility;
 import qalegend.utils.WaitFunction;
 
@@ -22,55 +26,55 @@ public class UserPage {
 	}
 
 	@FindBy(linkText = "Add")
-	WebElement AddLink;
+	private WebElement AddLink;
 	@FindBy(id = "first_name")
-	WebElement firstName;
+	private WebElement firstName;
 	@FindBy(id = "email")
-	WebElement email;
+	private WebElement email;
 	@FindBy(id = "role")
-	WebElement role;
+	private WebElement role;
 	@FindBy(id = "username")
-	WebElement userName;
+	private WebElement userName;
 	@FindBy(id = "password")
-	WebElement password;
+	private WebElement password;
 	@FindBy(name = "confirm_password")
-	WebElement confirmPassword;
+	private WebElement confirmPassword;
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement submitButton;
+	private WebElement submitButton;
 	@FindBy(xpath = "//input[@type='search']")
-	WebElement search;
+	private WebElement search;
 	@FindBy(xpath = "//*[contains(text(),'View')]")
-	WebElement view;
+	private WebElement view;
 	@FindBy(xpath = "//button[@class='btn btn-xs btn-danger delete_user_button']")
-	WebElement deleteIcon;
+	private WebElement deleteIcon;
 	@FindBy(xpath = "//button[contains(text(),'Cancel')]")
-	WebElement cancelConfirmationMessage;
+	private WebElement cancelConfirmationMessage;
 	@FindBy(xpath = "//button[contains(text(),'OK')]")
-	WebElement acceptConfirmationMessage;
+	private WebElement acceptConfirmationMessage;
 	@FindBy(xpath = "//*[contains(text(),'User added successfully')]")
-	WebElement successfulUserMessage;
+	private WebElement successfulUserMessage;
 	@FindBy(css = "label[class='error']")
-	WebElement errorMessage;
+	private WebElement errorMessage;
 	@FindAll({ @FindBy(xpath = "//table[@id='users_table']/tbody/tr") })
-	List<WebElement> listOfUser;
+	private List<WebElement> listOfUser;
 	@FindAll({ @FindBy(xpath = "//table[@id='users_table']/tbody/tr/td") })
-	List<WebElement> userDetail;
+	private List<WebElement> userDetail;
 	@FindBy(xpath = "//h1[contains(text(),'View User')]")
-	WebElement viewUser;
+	private WebElement viewUser;
 	@FindBy(xpath = "//*[contains(text(),'User deleted successfully')]")
-	WebElement deleteMessage;
+	private WebElement deleteMessage;
 	@FindBy(xpath = "//*[contains(text(),'Edit')]")
-	WebElement editIcon;
+	private WebElement editIcon;
 	@FindBy(id = "cmmsn_percent")
-	WebElement salesCommisionField;
+	private WebElement salesCommisionField;
 	@FindBy(xpath = "//*[contains(text(),'User updated successfully')]")
-	WebElement updateMessage;
+	private WebElement updateMessage;
 	@FindBy(xpath = "//input[@type='checkbox'and @value='active']//following-sibling::ins")
-	WebElement activeCheck;
+	private WebElement activeCheck;
 	@FindBy(className = "iCheck-helper")
-	WebElement activeSelect;
+	private WebElement activeSelect;
 	@FindBy(xpath = "//*[contains(text(),'Sorry, account is inactive')]")
-	WebElement inactiveMessage;
+	private WebElement inactiveMessage;
 	WaitFunction wait = new WaitFunction();
 
 	public void CreateUser(String first_Name, String email_id, String roleName, String user_Name, String password_text,
@@ -84,6 +88,7 @@ public class UserPage {
 		PageUtility.enterText(password, password_text);
 		PageUtility.enterText(confirmPassword, confirm_Password);
 		submitButton.click();
+
 	}
 
 	public void searchUser(String searchValue) {
@@ -141,13 +146,11 @@ public class UserPage {
 	
 
 
-	public WebElement getViewUser() {
-		return viewUser;
+	public boolean  getViewUser() {
+		return PageUtility.isDisplay(viewUser);
 	}
 
-	public void setViewUser(WebElement viewUser) {
-		this.viewUser = viewUser;
-	}
+	
 
 	public boolean getDeleteMessage() {
 		wait.explicitWaitUntilVisibilityOfElement(driver, deleteMessage, 50);
@@ -211,5 +214,6 @@ public class UserPage {
 
 		return successfulUserMessage.isDisplayed();
 	}
-
+	
 }
+

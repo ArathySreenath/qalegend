@@ -210,6 +210,13 @@ public class QaDataProvider {
 				"deleteCloseAccount");
 		return obj;
 	}
+	
+	@DataProvider(name = "testCase31")
+	public Object[][] fileUpload() throws EncryptedDocumentException, InvalidFormatException, IOException {
+		Object[][] obj = DataReader.getDataFromExcel(Constant.DATAREADERPATH,
+				"testCase31");
+		return obj;
+	}
 
 
 	@DataProvider(name = "testCase30")
@@ -219,6 +226,8 @@ public class QaDataProvider {
 				"closeAccountDisplay");
 		return obj;
 	}
-
-
+	
+	
+	
+	
 }

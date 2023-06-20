@@ -11,9 +11,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import common.functions.BrowserLaunch;
 import qalegend.utils.PageUtility;
 import qalegend.utils.WaitFunction;
+
 
 
 public class AccountsPage {
@@ -24,55 +24,55 @@ public class AccountsPage {
 		this.driver = driver;
 	}
 	@FindBy(xpath = "//button[@class='btn btn-primary btn-modal pull-right']")
-	WebElement addLink;
+	private WebElement addLink;
 	@FindBy(id = "name")
-	WebElement accountName;
+	private WebElement accountName;
 	@FindBy(id = "account_number")
-	WebElement accountNumber;
+	private WebElement accountNumber;
 	@FindBy(id = "opening_balance")
-	WebElement openingBalance;
+	private WebElement openingBalance;
 	@FindBy(xpath = "//button[contains(text(),'Submit')]")
-	WebElement submit;
+	private WebElement submit;
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement save;
+	private WebElement save;
 	@FindBy(xpath = "//*[contains(text(),'Account created successfully')]")
-	WebElement successMessage;
+	private WebElement successMessage;
 	@FindBy(xpath = "//input[@type='search']")
-	WebElement search;
+	private WebElement search;
 	@FindBy(xpath = "//button[contains(text(),'Fund Transfer')]")
-	WebElement fundTransferLink;
+	private WebElement fundTransferLink;
 	@FindBy(xpath = "//button[contains(text(),'Edit')]")
-	WebElement editButton;
+	private WebElement editButton;
 	@FindBy(xpath = "//button[contains(text(),'Deposit')]")
-	WebElement depositLink;
+	private WebElement depositLink;
 	@FindBy(xpath = "//button[@class='btn btn-xs btn-danger close_account']")
-	WebElement closeLink;
+	private WebElement closeLink;
 	@FindBy(name = "to_account")
-	WebElement transferToAccount;
+	private WebElement transferToAccount;
 	@FindBy(name = "amount")
-	WebElement amount;
+	private WebElement amount;
 	@FindBy(name = "operation_date")
-	WebElement date;
+	private WebElement date;
 	@FindBy(xpath = "//*[contains(text(),'Fund transfered successfully')]")
-	WebElement fundTransferMessage;
+	private WebElement fundTransferMessage;
 	@FindBy(xpath = "//*[contains(text(),'Account updated successfully')]")
-	WebElement accountUpdateMessage;
+	private WebElement accountUpdateMessage;
 	@FindBy(xpath = "//*[contains(text(),'Account closed successfully')]")
-	WebElement accountCloseMessage;
+	private WebElement accountCloseMessage;
 	@FindBy(xpath = "//table/tbody/tr/td[4]")
-	WebElement balance;
+	private WebElement balance;
 	@FindBy(xpath = "//table/tbody/tr/td[1]")
-	WebElement searchName;
+	private WebElement searchName;
 	@FindBy(xpath = "//button[@class='btn btn-primary']")
-	WebElement submitFundTransfer;
+	private WebElement submitFundTransfer;
 	@FindBy(name = "from_account")
-	WebElement fromAccount;
+	private WebElement fromAccount;
 	@FindBy(xpath = "//button[contains(text(),'Cancel')]")
-	WebElement cancelCloseButton;
+	private WebElement cancelCloseButton;
 	@FindBy(xpath = "//button[contains(text(),'OK')]")
-	WebElement acceptCloseButton;
+	private WebElement acceptCloseButton;
 	@FindBy(xpath = "//table/tbody/tr/td[1]")
-	WebElement accountNameVerify;
+	private WebElement accountNameVerify;
 	WaitFunction wait = new WaitFunction();
 
 	public void addAccount(String accountNameData, String accountNumberData, String openingBalanceData) {
@@ -90,7 +90,7 @@ public class AccountsPage {
 		searchAcc(searchData);
 		fundTransferLink.click();
 		wait.explicitWaitUntilVisibilityOfElement(driver, transferToAccount, 30);
-		PageUtility.dropdown(transferToAccount, transferToAccountName, driver);
+		PageUtility.dropdownSelectByVisibleText(transferToAccount, transferToAccountName);
 		PageUtility.enterText(amount, amountData);
 		PageUtility.enterText(date, dateOfTransfer);
 		wait.explicitWaitUntilVisibilityOfElement(driver, submit, 40);
@@ -101,7 +101,7 @@ public class AccountsPage {
 	public void deposit(String amountData, String fromAccountName, String dateOfTransfer) {
 		depositLink.click();
 		PageUtility.enterText(amount, amountData);
-		PageUtility.dropdown(fromAccount, fromAccountName, driver);
+		PageUtility.dropdownSelectByVisibleText(fromAccount, fromAccountName);
 		PageUtility.enterText(date, dateOfTransfer);
 		submit.click();
 
@@ -166,9 +166,7 @@ public class AccountsPage {
 		return correctedBalance;
 	}
 
-	public void setBalance(WebElement balance) {
-		this.balance = balance;
-	}
+	
 
 	public String getAccountUpdateMessage() {
 		return accountUpdateMessage.getText();

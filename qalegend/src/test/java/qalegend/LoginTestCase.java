@@ -20,7 +20,7 @@ import retryAnalyser.Retry;
 
 public class LoginTestCase extends BrowserLaunch {
 
-	@Test(testName = "TestCase1", dataProvider = "testCase1", dataProviderClass = QaDataProvider.class, groups = "sanityTest")
+	@Test(testName = "TestCase1", dataProvider = "testCase1", dataProviderClass = QaDataProvider.class )
 	public void verifyLoginWithValidUsernameAndInvalidPassword(String uname, String password) {
 
 		LoginPage login = new LoginPage(driver);
@@ -31,8 +31,7 @@ public class LoginTestCase extends BrowserLaunch {
 
 	}
 
-	@Test(retryAnalyzer = Retry.class, testName = "TestCase2", dataProvider = "testdatavalid", dataProviderClass = QaDataProvider.class, groups = {
-			"smokeTest", "sanityTest" })
+	@Test(retryAnalyzer = Retry.class, testName = "TestCase2", dataProvider = "testdatavalid", dataProviderClass = QaDataProvider.class)
 
 	public void verifyLoginWithValidUsernameAndValidPassword(String uname, String password) {
 

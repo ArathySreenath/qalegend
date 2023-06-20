@@ -18,33 +18,33 @@ public class RolePage {
 	}
 
 	@FindBy(linkText = "Add")
-	WebElement addLink;
+	private WebElement addLink;
 	@FindBy(id = "name")
-	WebElement roleName;
+	private WebElement roleName;
 	@FindBy(xpath = "//h4[contains(text(),'User')]//parent::div//following-sibling::div[@class='col-md-2']//child::div//child::label//child::div//child::ins")
-	WebElement selectAllUsers;
+	private WebElement selectAllUsers;
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement submitButton;
+	private WebElement submitButton;
 	@FindBy(xpath = "//*[contains(text(),'Role added successfully')]")
-	WebElement roleAddedMessage;
+	private WebElement roleAddedMessage;
 	@FindBy(xpath = "//input[@type='search']")
-	WebElement search;
+	private WebElement search;
 	@FindBy(linkText = "Edit")
-	WebElement editLink;
+	private WebElement editLink;
 	@FindBy(xpath = "//*[contains(text(),'Role updated successfully')]")
-	WebElement roleUpdatedMessage;
+	private WebElement roleUpdatedMessage;
 	@FindBy(xpath = "//button[contains(text(),'Delete')]")
-	WebElement deleteLink;
+	private WebElement deleteLink;
 	@FindBy(xpath = "//button[contains(text(),'Cancel')]")
-	WebElement cancelDeleteLink;
+	private WebElement cancelDeleteLink;
 	@FindBy(xpath = "//button[contains(text(),'OK')]")
-	WebElement acceptDeleteLink;
+	private WebElement acceptDeleteLink;
 	@FindBy(xpath = "//table/tbody/tr[1]/td[1]")
-	WebElement verifyDelete;
+	private WebElement verifyDelete;
 	@FindBy(xpath = "//*[contains(text(),'Role deleted successfully')]")
-	WebElement roleDeletedMessage;
+	private WebElement roleDeletedMessage;
 	@FindBy(xpath = "//*[contains(text(),'No matching records found')]")
-	WebElement noRecordFoundMessage;
+	private WebElement noRecordFoundMessage;
 
 	public void addRole(String roleNameData) {
 		addLink.click();

@@ -24,5 +24,6 @@ public class Constant {
 	public static final String TAXRATE_DELETED_SUCCESSFULLY = "Tax rate deleted successfully";
 	public static final String TAXGROUP_ADDED_SUCCESSFULLY = "Tax group added successfully";
 	public static final String TAXRATE_BELONGS_TO_SOME_TAXGROUP = "This tax rate belongs to some tax groups";
+	public static final String  ADD_EXPENSE_SUCCESSFULLY="Expense added successfully";
 
 }

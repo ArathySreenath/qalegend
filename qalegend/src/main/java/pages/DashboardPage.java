@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,32 +19,39 @@ public class DashboardPage {
 	}
 
 	@FindBy(linkText = "User Management")
-	WebElement userManagementLink;
+	private WebElement userManagementLink;
 	@FindBy(linkText = "Users")
-	WebElement userLink;
+	private WebElement userLink;
 	@FindBy(linkText = "Roles")
-	WebElement roleLink;
+	private WebElement roleLink;
 	@FindBy(xpath = "//a[contains(text(),'Sign Out')]")
-	WebElement signOut;
+	private WebElement signOut;
 	@FindBy(xpath = "//a[@class='dropdown-toggle']")
-	WebElement loggedInUserName;
+	private WebElement loggedInUserName;
 	@FindBy(xpath = "//*[contains(text(),'Home')]")
-	WebElement homeLink;
+	private WebElement homeLink;
 	@FindBy(linkText="Settings")
-	WebElement settingsLink;
+	private WebElement settingsLink;
 	@FindBy(linkText="Tax Rates")
-	WebElement taxRateLink;
+	private WebElement taxRateLink;
 	@FindBy(linkText="Payment Accounts")
-	WebElement paymentAccountsLink;
+	private WebElement paymentAccountsLink;
 	@FindBy(linkText="List Accounts")
-	WebElement listAccountsLink;
+	private WebElement listAccountsLink;
 	@FindBy(xpath="//button[contains(text(),'End tour')]")
-	WebElement endTour;
+	private WebElement endTour;
 	@FindBy(xpath="//h1[contains(text(),'Welcome')]")
-	WebElement welcomeText;
-	
-	
+	private WebElement welcomeText;
+	@FindBy(xpath="//section[contains(@class,'content-header')]/h1")
+	private WebElement welcome;
+	@FindBy(linkText="Expenses")
+	WebElement expenses;
+	@FindBy(linkText = "Add Expenses")
+	WebElement addExpense;
 	WaitFunction wait = new WaitFunction();
+
+	
+	
 	public boolean validLogin() {
 		boolean welcomeDisplay=welcomeText.isDisplayed();
 		return welcomeDisplay;
@@ -81,6 +89,10 @@ public class DashboardPage {
 	{
 		PageUtility.clickFunction(paymentAccountsLink);
 		PageUtility.clickFunction(listAccountsLink);
+	}
+	public void navigateToAddExpensePage() {
+		PageUtility.clickFunction(expenses);
+		PageUtility.clickFunction(addExpense);
 	}
 
 	public void logoutFunction() throws Exception {
